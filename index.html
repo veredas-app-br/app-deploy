@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="author">
     <meta name="description" content="Aplicação de Trilhas">
-    <meta content="#2d2c2c" name="theme-color">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#2d2c2c">
+    <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport">
     <meta name="mobile-web-app-capable" content="yes">
     <meta property="og:url" content="https://">
     <meta property="og:title">
@@ -17,66 +17,68 @@
     <link href="https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.png" rel="apple-touch-icon">
     <link rel="manifest" href="/manifest.webmanifest">
     <link href="/app.css" type="text/css" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="/web/daisyui.css">
-    <link href="/web/animations.css" type="text/css" rel="stylesheet">
+    <link href="/web/daisyui.css" type="text/css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="/web/animations.css">
     <script defer src="/wasm_exec.js"></script>
     <script defer src="/app.js"></script>
     <meta name="theme-color" content="#570df8">
   </head>
   <body>
-    <div class="min-h-screen flex flex-col relative">
-      <div class="navbar bg-primary text-primary-content">
-        <div class="navbar-start">
-          <button class="btn btn-ghost btn-square" type="button">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
-          </button>
-          <a href="#home" class="btn btn-ghost text-xl">Veredas</a>
-        </div>
-        <div class="navbar-end">
-          <div class="hidden lg:flex lg:gap-2">
-            <a class="btn btn-ghost btn-active" href="#home">Home</a>
-            <a class="btn btn-ghost" href="#trails">Trilhas</a>
-            <a class="btn btn-ghost" href="#login">Login</a>
-            <a class="btn btn-ghost" href="#register">Cadastrar</a>
+    <div>
+      <div class="min-h-screen flex flex-col">
+        <div class="navbar bg-primary text-primary-content">
+          <div class="navbar-start">
+            <button class="btn btn-ghost btn-square" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+            </button>
+            <a class="btn btn-ghost text-xl" href="#home">Veredas</a>
+          </div>
+          <div class="navbar-end">
+            <div class="hidden lg:flex lg:gap-2">
+              <a class="btn btn-ghost btn-active" href="#home">Home</a>
+              <a class="btn btn-ghost" href="#trails">Trilhas</a>
+              <a class="btn btn-ghost" href="#login">Login</a>
+              <a class="btn btn-ghost" href="#register">Cadastrar</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="flex-1">
-        <div class="hero min-h-screen bg-base-200">
-          <div class="hero-content text-center">
-            <div class="max-w-md">
-              <h1 class="text-5xl font-bold">Bem-vindo!</h1>
-              <p class="py-6 text-xl">Aplicação de Trilhas</p>
-              <div class="flex gap-4 justify-center">
-                <a class="btn btn-primary btn-lg" href="#login">Login</a>
-                <a href="#register" class="btn btn-secondary btn-lg">Cadastrar</a>
+        <div class="flex-1">
+          <div class="hero min-h-screen bg-base-200">
+            <div class="hero-content text-center">
+              <div class="max-w-md">
+                <h1 class="text-5xl font-bold">Bem-vindo!</h1>
+                <p class="py-6 text-xl">Aplicação de Trilhas</p>
+                <div class="flex gap-4 justify-center">
+                  <a href="#login" class="btn btn-primary btn-lg">Login</a>
+                  <a class="btn btn-secondary btn-lg" href="#register">Cadastrar</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <footer class="footer bg-neutral text-neutral-content p-10">
+          <nav>
+            <span class="footer-title">Navegação</span>
+            <a class="link link-hover" href="#home">Home</a>
+            <a class="link link-hover" href="#trails">Trilhas</a>
+            <a class="link link-hover" href="#login">Login</a>
+          </nav>
+          <nav>
+            <span class="footer-title">Empresa</span>
+            <a class="link link-hover">Sobre</a>
+            <a class="link link-hover">Contato</a>
+          </nav>
+          <nav>
+            <span class="footer-title">Legal</span>
+            <a class="link link-hover">Termos de uso</a>
+            <a class="link link-hover">Política de privacidade</a>
+          </nav>
+        </footer>
       </div>
-      <footer class="footer bg-neutral text-neutral-content p-10">
-        <nav>
-          <span class="footer-title">Navegação</span>
-          <a class="link link-hover" href="#home">Home</a>
-          <a class="link link-hover" href="#trails">Trilhas</a>
-          <a class="link link-hover" href="#login">Login</a>
-        </nav>
-        <nav>
-          <span class="footer-title">Empresa</span>
-          <a class="link link-hover">Sobre</a>
-          <a class="link link-hover">Contato</a>
-        </nav>
-        <nav>
-          <span class="footer-title">Legal</span>
-          <a class="link link-hover">Termos de uso</a>
-          <a class="link link-hover">Política de privacidade</a>
-        </nav>
-      </footer>
       <div></div>
     </div>
     <aside id="app-wasm-loader" class="goapp-app-info">
-      <img id="app-wasm-loader-icon" class="goapp-logo goapp-spin" alt="wasm loader icon" src="https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.png">
+      <img alt="wasm loader icon" src="https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.png" id="app-wasm-loader-icon" class="goapp-logo goapp-spin">
       <p id="app-wasm-loader-label" class="goapp-label">0%</p>
     </aside>
   </body>
