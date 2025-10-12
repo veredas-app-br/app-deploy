@@ -1,0 +1,60 @@
+/* Custom animations for drawer and other components */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0.8;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0.8;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s ease-out;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animate-slide-out-left {
+  animation: slideOutLeft 0.25s cubic-bezier(0.4, 0, 1, 1);
+}
+
+/* Enhanced menu item hover effects */
+.menu li > a:hover {
+  transform: translateX(4px);
+  transition: transform 0.2s ease-out;
+}
+
+.menu li > a {
+  transition: all 0.2s ease-out;
+  border-radius: 0.5rem;
+}
+
+/* Active menu item glow effect */
+.menu li > a.active {
+  box-shadow: 0 0 15px rgba(87, 13, 248, 0.3);
+}
