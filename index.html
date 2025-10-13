@@ -15,7 +15,7 @@
     <title></title>
     <link rel="icon" href="https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.svg">
     <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.png">
-    <link href="/app-deploy/manifest.webmanifest" rel="manifest">
+    <link rel="manifest" href="/app-deploy/manifest.webmanifest">
     <link href="/app-deploy/app.css" type="text/css" rel="stylesheet">
     <link href="/app-deploy/web/daisyui.css" type="text/css" rel="stylesheet">
     <link href="/app-deploy/web/animations.css" type="text/css" rel="stylesheet">
@@ -24,11 +24,11 @@
     <meta name="theme-color" content="#94C992">
   </head>
   <body>
-    <div class="min-h-screen flex flex-col" data-theme="veredas">
-      <header style="height:72px;width:100%;padding:16px 16px 8px;display:flex;align-items:center;justify-content:space-between">
-        <div style="width:24px;min-width:24px;flex-grow:1"></div>
+    <div class="min-h-screen flex flex-col" data-theme="emerald">
+      <header style="height:4.5rem;width:100%;padding:1rem 1rem 0.5rem;display:flex;align-items:center;justify-content:space-between">
+        <div style="width:1.5rem;min-width:1.5rem;flex-grow:1"></div>
         <h1 style="flex-grow:0;text-align:center;font-weight:bold;flex-shrink:0">Veredas</h1>
-        <div style="width:24px;min-width:24px;flex-grow:1;display:flex;justify-content:flex-end">
+        <div style="width:1.5rem;min-width:1.5rem;flex-grow:1;display:flex;justify-content:flex-end">
           <button class="btn btn-ghost">
             <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.84375V0.75C4 0.335786 3.66421 0 3.25 0C2.83579 0 2.5 0.335786 2.5 0.75V6.84375C1.17256 7.18363 0.244117 8.37974 0.244117 9.75C0.244117 11.1203 1.17256 12.3164 2.5 12.6562V17.25C2.5 17.6642 2.83579 18 3.25 18C3.66421 18 4 17.6642 4 17.25V12.6562C5.32744 12.3164 6.25588 11.1203 6.25588 9.75C6.25588 8.37974 5.32744 7.18363 4 6.84375ZM3.25 11.25C2.42157 11.25 1.75 10.5784 1.75 9.75C1.75 8.92157 2.42157 8.25 3.25 8.25C4.07843 8.25 4.75 8.92157 4.75 9.75C4.75 10.5784 4.07843 11.25 3.25 11.25ZM10.75 2.34375V0.75C10.75 0.335786 10.4142 0 10 0C9.58579 0 9.25 0.335786 9.25 0.75V2.34375C7.92256 2.68363 6.99412 3.87974 6.99412 5.25C6.99412 6.62026 7.92256 7.81637 9.25 8.15625V17.25C9.25 17.6642 9.58579 18 10 18C10.4142 18 10.75 17.6642 10.75 17.25V8.15625C12.0774 7.81637 13.0059 6.62026 13.0059 5.25C13.0059 3.87974 12.0774 2.68363 10.75 2.34375ZM10 6.75C9.17157 6.75 8.5 6.07843 8.5 5.25C8.5 4.42157 9.17157 3.75 10 3.75C10.8284 3.75 11.5 4.42157 11.5 5.25C11.5 6.07843 10.8284 6.75 10 6.75ZM19.75 12.75C19.7487 11.3821 18.8239 10.1876 17.5 9.84375V0.75C17.5 0.335786 17.1642 0 16.75 0C16.3358 0 16 0.335786 16 0.75V9.84375C14.6726 10.1836 13.7441 11.3797 13.7441 12.75C13.7441 14.1203 14.6726 15.3164 16 15.6562V17.25C16 17.6642 16.3358 18 16.75 18C17.1642 18 17.5 17.6642 17.5 17.25V15.6562C18.8239 15.3124 19.7487 14.1179 19.75 12.75ZM16.75 14.25C15.9216 14.25 15.25 13.5784 15.25 12.75C15.25 11.9216 15.9216 11.25 16.75 11.25C17.5784 11.25 18.25 11.9216 18.25 12.75C18.25 13.5784 17.5784 14.25 16.75 14.25Z" fill="#0D1C0D"/>
@@ -36,15 +36,15 @@
           </button>
         </div>
       </header>
-      <div class="flex-1" style="min-height:calc(100vh - 72px);max-height:calc(100vh - 72px);overflow:auto">
+      <div class="flex-1" style="min-height:calc(100vh - 4.5rem - 6rem);max-height:calc(100vh - 4.5rem - 6rem);overflow:auto">
         <div style="display:flex;flex-direction:column;align-items:center;justify-content:center">
-          <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;width:calc(100% - 32px);margin-right:16px;margin-left:16px" class="input input-bordered input-sm">
+          <div class="input input-bordered input-sm" style="display:flex;align-items:center;gap:8px;width:calc(100% - 2rem);margin-right:16px;margin-left:16px;margin-bottom:8px">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path fill-rule="evenodd" clip-rule="evenodd" d="M19.5306 18.4694L14.8366 13.7762C17.6629 10.383 17.3204 5.36693 14.0591 2.38935C10.7978 -0.588237 5.77134 -0.474001 2.64867 2.64867C-0.474001 5.77134 -0.588237 10.7978 2.38935 14.0591C5.36693 17.3204 10.383 17.6629 13.7762 14.8366L18.4694 19.5306C18.7624 19.8237 19.2376 19.8237 19.5306 19.5306C19.8237 19.2376 19.8237 18.7624 19.5306 18.4694ZM1.75 8.5C1.75 4.77208 4.77208 1.75 8.5 1.75C12.2279 1.75 15.25 4.77208 15.25 8.5C15.25 12.2279 12.2279 15.25 8.5 15.25C4.77379 15.2459 1.75413 12.2262 1.75 8.5Z" fill="#4F964F"/>
 		</svg>
             <input type="text" class="grow" placeholder="Pesquisar trilhas" disabled="false">
           </div>
-          <div style="display:flex;gap:8px;max-width:100%;overflow:auto;padding:16px;margin-bottom:8px">
+          <div style="display:flex;gap:0.5rem;max-width:100vw;overflow:auto;padding:1rem;margin-bottom:0.5rem">
             <button class="btn btn-sm">Localização</button>
             <button class="btn btn-sm">Dificuldade</button>
             <button class="btn btn-sm">Atividade</button>
@@ -54,9 +54,43 @@
           <h2 style="width:100%;padding:8px 16px;font-size:22px;font-weight:bold">Trilhas em Destaque</h2>
         </div>
       </div>
+      <div class="dock" style="height:6rem;display:flex;align-items:center;justify-content:center;gap:0.5rem;min-width:100vw;max-width:100vw;border-top:1px solid #D1D1D1">
+        <button style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.25rem;background:none;cursor:pointer;width:4rem;height:5.5rem;filter:brightness(0) saturate(100%) invert(75%) sepia(32%) saturate(516%) hue-rotate(92deg) brightness(98%) contrast(86%)">
+          <div style="display:flex;align-items:center;justify-content:center">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 8.5C13.5 11.3995 11.1495 13.75 8.25 13.75C5.3505 13.75 3 11.3995 3 8.5C3 5.6005 5.3505 3.25 8.25 3.25C11.1495 3.25 13.5 5.6005 13.5 8.5ZM19.2806 19.5306C19.1399 19.6715 18.9491 19.7506 18.75 19.7506C18.5509 19.7506 18.3601 19.6715 18.2194 19.5306L13.5262 14.8366C10.1358 17.6572 5.12647 17.3124 2.15446 14.0538C-0.817553 10.7952 -0.701056 5.77538 2.41892 2.65816C5.5389 -0.459059 10.5588 -0.571119 13.8148 2.40377C17.0708 5.37866 17.4111 10.3883 14.5875 13.7762L19.2806 18.4694C19.4215 18.6101 19.5006 18.8009 19.5006 19C19.5006 19.1991 19.4215 19.3899 19.2806 19.5306ZM8.25 15.25C11.9779 15.25 15 12.2279 15 8.5C15 4.77208 11.9779 1.75 8.25 1.75C4.52208 1.75 1.5 4.77208 1.5 8.5C1.50413 12.2262 4.52379 15.2459 8.25 15.25Z" fill="#333C4D"/>
+				</svg>
+          </div>
+          <span class="dock-label" style="font-size:0.75rem;color:#66CC8A">Buscar</span>
+        </button>
+        <button style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.25rem;background:none;cursor:pointer;width:4rem;height:5.5rem">
+          <div style="display:flex;align-items:center;justify-content:center">
+            <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M16.75 0H1.75C0.921573 0 0.25 0.671573 0.25 1.5V16.5C0.25 17.3284 0.921573 18 1.75 18H16.75C17.5784 18 18.25 17.3284 18.25 16.5V1.5C18.25 0.671573 17.5784 0 16.75 0ZM16.75 16.5H1.75V1.5H16.75V16.5ZM13.75 9C13.75 9.41421 13.4142 9.75 13 9.75H10V12.75C10 13.1642 9.66421 13.5 9.25 13.5C8.83579 13.5 8.5 13.1642 8.5 12.75V9.75H5.5C5.08579 9.75 4.75 9.41421 4.75 9C4.75 8.58579 5.08579 8.25 5.5 8.25H8.5V5.25C8.5 4.83579 8.83579 4.5 9.25 4.5C9.66421 4.5 10 4.83579 10 5.25V8.25H13C13.4142 8.25 13.75 8.58579 13.75 9Z" fill="#333C4D"/>
+				</svg>
+          </div>
+          <span class="dock-label" style="font-size:0.75rem">Gravar</span>
+        </button>
+        <button style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.25rem;background:none;cursor:pointer;width:4rem;height:5.5rem">
+          <div style="display:flex;align-items:center;justify-content:center">
+            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M20.1488 17.875C18.7209 15.4066 16.5206 13.6366 13.9528 12.7975C16.5635 11.2433 17.8141 8.13638 17.0082 5.2069C16.2022 2.27741 13.5383 0.247449 10.5 0.247449C7.46167 0.247449 4.79779 2.27741 3.99182 5.2069C3.18585 8.13638 4.43645 11.2433 7.04719 12.7975C4.47938 13.6356 2.27906 15.4056 0.85125 17.875C0.708704 18.1074 0.703527 18.3989 0.837731 18.6363C0.971935 18.8736 1.22438 19.0194 1.49702 19.0171C1.76967 19.0147 2.01958 18.8646 2.14969 18.625C3.91594 15.5725 7.03781 13.75 10.5 13.75C13.9622 13.75 17.0841 15.5725 18.8503 18.625C18.9804 18.8646 19.2303 19.0147 19.503 19.0171C19.7756 19.0194 20.0281 18.8736 20.1623 18.6363C20.2965 18.3989 20.2913 18.1074 20.1488 17.875ZM5.25 7C5.25 4.1005 7.6005 1.75 10.5 1.75C13.3995 1.75 15.75 4.1005 15.75 7C15.75 9.8995 13.3995 12.25 10.5 12.25C7.60179 12.2469 5.2531 9.89821 5.25 7Z" fill="#333C4D"/>
+				</svg>
+          </div>
+          <span style="font-size:0.75rem" class="dock-label">Perfil</span>
+        </button>
+        <button style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.25rem;background:none;cursor:pointer;width:4rem;height:5.5rem">
+          <div style="display:flex;align-items:center;justify-content:center">
+            <svg width="15" height="19" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M12.75 0H2.25C1.42157 0 0.75 0.671573 0.75 1.5V18C0.750135 18.2726 0.898147 18.5236 1.13659 18.6557C1.37503 18.7878 1.66636 18.7801 1.8975 18.6356L7.5 15.1341L13.1034 18.6356C13.3345 18.7796 13.6255 18.787 13.8636 18.655C14.1018 18.523 14.2497 18.2723 14.25 18V1.5C14.25 0.671573 13.5784 0 12.75 0ZM12.75 1.5V12.1472L7.89656 9.11438C7.65336 8.96237 7.34477 8.96237 7.10156 9.11438L2.25 12.1462V1.5H12.75ZM7.89656 13.6144C7.65336 13.4624 7.34477 13.4624 7.10156 13.6144L2.25 16.6472V13.9153L7.5 10.6341L12.75 13.9153V16.6472L7.89656 13.6144Z" fill="#333C4D"/>
+				</svg>
+          </div>
+          <span class="dock-label" style="font-size:0.75rem">Favoritos</span>
+        </button>
+      </div>
     </div>
     <aside id="app-wasm-loader" class="goapp-app-info">
-      <img id="app-wasm-loader-icon" class="goapp-logo goapp-spin" alt="wasm loader icon" src="https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.png">
+      <img class="goapp-logo goapp-spin" alt="wasm loader icon" src="https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.png" id="app-wasm-loader-icon">
       <p id="app-wasm-loader-label" class="goapp-label">0%</p>
     </aside>
   </body>
