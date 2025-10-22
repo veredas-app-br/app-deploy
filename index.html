@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="author">
-    <meta name="description" content="Aplicação de Trilhas">
-    <meta content="#2d2c2c" name="theme-color">
+    <meta content="Aplicação de Trilhas" name="description">
+    <meta name="theme-color" content="#94C992">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="mobile-web-app-capable" content="yes">
     <meta property="og:url" content="https:///app-deploy">
@@ -13,17 +13,16 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://">
     <title></title>
-    <link rel="icon" href="https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.svg">
-    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.png">
+    <link rel="icon" href="/app-deploy/web/icon.svg">
+    <link href="/app-deploy/web/icon.svg" rel="apple-touch-icon">
     <link rel="manifest" href="/app-deploy/manifest.webmanifest">
-    <link href="/app-deploy/app.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="/app-deploy/app.css" type="text/css">
     <link href="/app-deploy/web/daisyui.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" href="/app-deploy/web/animations.css" type="text/css">
+    <link href="/app-deploy/web/animations.css" type="text/css" rel="stylesheet">
     <link href="/app-deploy/web/leaflet.css" type="text/css" rel="stylesheet">
-    <script defer src="/app-deploy/wasm_exec.js"></script>
+    <script src="/app-deploy/wasm_exec.js" defer></script>
     <script defer src="/app-deploy/app.js"></script>
     <script src="/app-deploy/web/leaflet.js"></script>
-    <meta name="theme-color" content="#94C992">
   </head>
   <body>
     <div class="min-h-screen flex flex-col" data-theme="emerald">
@@ -39,7 +38,7 @@
         </div>
       </header>
       <div class="flex-1" style="min-height:calc(100vh - 4.5rem - 6rem);max-height:calc(100vh - 4.5rem - 6rem);overflow:auto">
-        <div style="position:relative;width:100%;height:100%">
+        <div class="relative w-full h-full">
           <div id="home-map" style="height:calc(100vh - 4.5rem - 6rem);width:100%"></div>
           <div style="position:absolute;top:0;left:0;right:0;z-index:1000;pointer-events:none">
             <div style="pointer-events:auto">
@@ -47,13 +46,13 @@
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path fill-rule="evenodd" clip-rule="evenodd" d="M19.5306 18.4694L14.8366 13.7762C17.6629 10.383 17.3204 5.36693 14.0591 2.38935C10.7978 -0.588237 5.77134 -0.474001 2.64867 2.64867C-0.474001 5.77134 -0.588237 10.7978 2.38935 14.0591C5.36693 17.3204 10.383 17.6629 13.7762 14.8366L18.4694 19.5306C18.7624 19.8237 19.2376 19.8237 19.5306 19.5306C19.8237 19.2376 19.8237 18.7624 19.5306 18.4694ZM1.75 8.5C1.75 4.77208 4.77208 1.75 8.5 1.75C12.2279 1.75 15.25 4.77208 15.25 8.5C15.25 12.2279 12.2279 15.25 8.5 15.25C4.77379 15.2459 1.75413 12.2262 1.75 8.5Z" fill="#4F964F"/>
 		</svg>
-                <input type="text" class="grow" placeholder="Pesquisar trilhas" disabled="false">
+                <input disabled="false" type="text" class="grow" placeholder="Pesquisar trilhas">
               </div>
-              <div style="display:flex;gap:0.5rem;max-width:100vw;overflow:auto;margin-bottom:0.5rem;margin-top:0.5rem;margin-right:1rem;margin-left:1rem">
-                <button class="btn btn-primary btn-sm">Dificuldade</button>
-                <button class="btn btn-primary btn-sm">Atividade</button>
-                <button class="btn btn-primary btn-sm">Duração</button>
-                <button class="btn btn-primary btn-sm">Avaliação</button>
+              <div style="display:flex;gap:0.5rem;max-width:100vw;overflow:auto;margin-top:0.5rem;padding-right:1rem;padding-left:1rem;margin-bottom:0.5rem">
+                <button class="btn btn-neutral btn-sm">Dificuldade</button>
+                <button class="btn btn-neutral btn-sm">Atividade</button>
+                <button class="btn btn-neutral btn-sm">Duração</button>
+                <button class="btn btn-neutral btn-sm">Avaliação</button>
               </div>
             </div>
           </div>
@@ -74,7 +73,7 @@
 					<path fill-rule="evenodd" clip-rule="evenodd" d="M16.75 0H1.75C0.921573 0 0.25 0.671573 0.25 1.5V16.5C0.25 17.3284 0.921573 18 1.75 18H16.75C17.5784 18 18.25 17.3284 18.25 16.5V1.5C18.25 0.671573 17.5784 0 16.75 0ZM16.75 16.5H1.75V1.5H16.75V16.5ZM13.75 9C13.75 9.41421 13.4142 9.75 13 9.75H10V12.75C10 13.1642 9.66421 13.5 9.25 13.5C8.83579 13.5 8.5 13.1642 8.5 12.75V9.75H5.5C5.08579 9.75 4.75 9.41421 4.75 9C4.75 8.58579 5.08579 8.25 5.5 8.25H8.5V5.25C8.5 4.83579 8.83579 4.5 9.25 4.5C9.66421 4.5 10 4.83579 10 5.25V8.25H13C13.4142 8.25 13.75 8.58579 13.75 9Z" fill="#333C4D"/>
 				</svg>
           </div>
-          <span style="font-size:0.75rem" class="dock-label">Gravar</span>
+          <span class="dock-label" style="font-size:0.75rem">Gravar</span>
         </button>
         <button style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.25rem;background:none;cursor:pointer;width:4rem;height:5.5rem">
           <div style="display:flex;align-items:center;justify-content:center">
@@ -95,7 +94,7 @@
       </div>
     </div>
     <aside id="app-wasm-loader" class="goapp-app-info">
-      <img id="app-wasm-loader-icon" class="goapp-logo goapp-spin" alt="wasm loader icon" src="https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.png">
+      <img src="/app-deploy/web/icon.svg" id="app-wasm-loader-icon" class="goapp-logo goapp-spin" alt="wasm loader icon">
       <p id="app-wasm-loader-label" class="goapp-label">0%</p>
     </aside>
   </body>

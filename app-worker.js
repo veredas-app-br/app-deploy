@@ -1,14 +1,14 @@
 // -----------------------------------------------------------------------------
 // PWA
 // -----------------------------------------------------------------------------
-const cacheName = "app-" + "4af559ec685515a55e4805a9485852386805f080";
+const cacheName = "app-" + "db7b7fe13bdb11353b27511070379f0740e3c808";
 const tilesCacheName = "osm-tiles-v1";
 const TILE_CACHE_DURATION = 7 * 24 * 60 * 60 * 1000; // 7 days in milliseconds
-const resourcesToCache = ["https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.png","/app-deploy/web/leaflet.js","/app-deploy/web/leaflet.css","/app-deploy/web/daisyui.css","/app-deploy/web/app.wasm","/app-deploy/web/animations.css","/app-deploy/wasm_exec.js","/app-deploy/manifest.webmanifest","/app-deploy/app.js","/app-deploy/app.css","/app-deploy"];
+const resourcesToCache = ["/app-deploy/web/leaflet.js","/app-deploy/web/leaflet.css","/app-deploy/web/icon.svg","/app-deploy/web/daisyui.css","/app-deploy/web/app.wasm","/app-deploy/web/animations.css","/app-deploy/wasm_exec.js","/app-deploy/manifest.webmanifest","/app-deploy/app.js","/app-deploy/app.css","/app-deploy"];
 
 self.addEventListener("install", async (event) => {
   try {
-    console.log("installing app worker 4af559ec685515a55e4805a9485852386805f080");
+    console.log("installing app worker db7b7fe13bdb11353b27511070379f0740e3c808");
     await installWorker();
     await self.skipWaiting();
   } catch (error) {
@@ -26,7 +26,7 @@ self.addEventListener("activate", async (event) => {
     await deletePreviousCaches();
     await cleanupOldTiles();
     await self.clients.claim();
-    console.log("app worker 4af559ec685515a55e4805a9485852386805f080 is activated");
+    console.log("app worker db7b7fe13bdb11353b27511070379f0740e3c808 is activated");
   } catch (error) {
     console.error("error during activation:", error);
   }
