@@ -1,12 +1,14 @@
 // -----------------------------------------------------------------------------
 // PWA
 // -----------------------------------------------------------------------------
-const cacheName = "app-" + "b244b7824dd1346da2e8d4a2c85be71a8c2b96eb";
-const resourcesToCache = ["https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.png","/app-deploy/web/daisyui.css","/app-deploy/web/app.wasm","/app-deploy/web/animations.css","/app-deploy/wasm_exec.js","/app-deploy/manifest.webmanifest","/app-deploy/app.js","/app-deploy/app.css","/app-deploy"];
+const cacheName = "app-" + "4af559ec685515a55e4805a9485852386805f080";
+const tilesCacheName = "osm-tiles-v1";
+const TILE_CACHE_DURATION = 7 * 24 * 60 * 60 * 1000; // 7 days in milliseconds
+const resourcesToCache = ["https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.png","/app-deploy/web/leaflet.js","/app-deploy/web/leaflet.css","/app-deploy/web/daisyui.css","/app-deploy/web/app.wasm","/app-deploy/web/animations.css","/app-deploy/wasm_exec.js","/app-deploy/manifest.webmanifest","/app-deploy/app.js","/app-deploy/app.css","/app-deploy"];
 
 self.addEventListener("install", async (event) => {
   try {
-    console.log("installing app worker b244b7824dd1346da2e8d4a2c85be71a8c2b96eb");
+    console.log("installing app worker 4af559ec685515a55e4805a9485852386805f080");
     await installWorker();
     await self.skipWaiting();
   } catch (error) {
@@ -21,9 +23,10 @@ async function installWorker() {
 
 self.addEventListener("activate", async (event) => {
   try {
-    await deletePreviousCaches(); // Await cache cleanup
-    await self.clients.claim(); // Ensure the service worker takes control of the clients
-    console.log("app worker b244b7824dd1346da2e8d4a2c85be71a8c2b96eb is activated");
+    await deletePreviousCaches();
+    await cleanupOldTiles();
+    await self.clients.claim();
+    console.log("app worker 4af559ec685515a55e4805a9485852386805f080 is activated");
   } catch (error) {
     console.error("error during activation:", error);
   }
@@ -33,7 +36,7 @@ async function deletePreviousCaches() {
   const keys = await caches.keys();
   await Promise.all(
     keys.map(async (key) => {
-      if (key !== cacheName) {
+      if (key !== cacheName && key !== tilesCacheName) {
         try {
           console.log("deleting", key, "cache");
           await caches.delete(key);
@@ -45,8 +48,120 @@ async function deletePreviousCaches() {
   );
 }
 
+// -----------------------------------------------------------------------------
+// Tile Cache Strategy
+// -----------------------------------------------------------------------------
+const OSM_TILE_PATTERN = /^https:\/\/[a-c]\.tile\.openstreetmap\.org\/\d+\/\d+\/\d+\.png$/;
+
+function isTileRequest(url) {
+  return OSM_TILE_PATTERN.test(url);
+}
+
+async function isCachedTileValid(cachedResponse) {
+  const cachedDate = cachedResponse.headers.get('sw-cached-date');
+  if (!cachedDate) {
+    return false;
+  }
+  
+  const cacheAge = Date.now() - parseInt(cachedDate);
+  return cacheAge < TILE_CACHE_DURATION;
+}
+
+async function handleTileRequest(request) {
+  const cache = await caches.open(tilesCacheName);
+  const cachedResponse = await cache.match(request);
+  
+  // If we have a valid cached tile, return it
+  if (cachedResponse && await isCachedTileValid(cachedResponse)) {
+    console.log('Serving tile from cache:', request.url);
+    return cachedResponse;
+  }
+  
+  // Try to fetch from network
+  try {
+    console.log('Fetching tile from network:', request.url);
+    const networkResponse = await fetch(request);
+    
+    if (networkResponse.ok) {
+      // Clone the response before caching
+      const responseToCache = networkResponse.clone();
+      
+      // Add cache date header
+      const headers = new Headers(responseToCache.headers);
+      headers.append('sw-cached-date', Date.now().toString());
+      
+      const cachedResponseWithDate = new Response(responseToCache.body, {
+        status: responseToCache.status,
+        statusText: responseToCache.statusText,
+        headers: headers
+      });
+      
+      // Cache the new tile
+      await cache.put(request, cachedResponseWithDate);
+      console.log('Tile cached:', request.url);
+      
+      return networkResponse;
+    }
+    
+    // Network fetch failed, but if we have expired cache, serve it anyway
+    if (cachedResponse) {
+      console.log('Network failed, serving expired cache:', request.url);
+      return cachedResponse;
+    }
+    
+    return networkResponse;
+  } catch (error) {
+    // Network error, serve expired cache if available
+    if (cachedResponse) {
+      console.log('Network error, serving expired cache:', request.url);
+      return cachedResponse;
+    }
+    
+    // No cache available, return error
+    console.error('Failed to fetch tile:', request.url, error);
+    return new Response('Tile not available', { status: 503 });
+  }
+}
+
+async function cleanupOldTiles() {
+  const cache = await caches.open(tilesCacheName);
+  const requests = await cache.keys();
+  const now = Date.now();
+  
+  let cleanedCount = 0;
+  for (const request of requests) {
+    const response = await cache.match(request);
+    if (response) {
+      const cachedDate = response.headers.get('sw-cached-date');
+      if (cachedDate) {
+        const cacheAge = now - parseInt(cachedDate);
+        // Remove tiles older than 30 days
+        if (cacheAge > 30 * 24 * 60 * 60 * 1000) {
+          await cache.delete(request);
+          cleanedCount++;
+        }
+      }
+    }
+  }
+  
+  if (cleanedCount > 0) {
+    console.log(`Cleaned up ${cleanedCount} old tiles`);
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Fetch Handler
+// -----------------------------------------------------------------------------
 self.addEventListener("fetch", (event) => {
-  event.respondWith(fetchWithCache(event.request));
+  const url = event.request.url;
+  
+  // Handle tile requests with special caching strategy
+  if (isTileRequest(url)) {
+    event.respondWith(handleTileRequest(event.request));
+  } else {
+    // Handle app resources with standard caching
+    event.respondWith(fetchWithCache(event.request));
+  }
 });
 
 async function fetchWithCache(request) {

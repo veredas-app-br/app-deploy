@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="author">
     <meta name="description" content="Aplicação de Trilhas">
-    <meta name="theme-color" content="#2d2c2c">
+    <meta content="#2d2c2c" name="theme-color">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="mobile-web-app-capable" content="yes">
     <meta property="og:url" content="https:///app-deploy">
@@ -18,9 +18,11 @@
     <link rel="manifest" href="/app-deploy/manifest.webmanifest">
     <link href="/app-deploy/app.css" type="text/css" rel="stylesheet">
     <link href="/app-deploy/web/daisyui.css" type="text/css" rel="stylesheet">
-    <link href="/app-deploy/web/animations.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="/app-deploy/web/animations.css" type="text/css">
+    <link href="/app-deploy/web/leaflet.css" type="text/css" rel="stylesheet">
     <script defer src="/app-deploy/wasm_exec.js"></script>
     <script defer src="/app-deploy/app.js"></script>
+    <script src="/app-deploy/web/leaflet.js"></script>
     <meta name="theme-color" content="#94C992">
   </head>
   <body>
@@ -37,21 +39,24 @@
         </div>
       </header>
       <div class="flex-1" style="min-height:calc(100vh - 4.5rem - 6rem);max-height:calc(100vh - 4.5rem - 6rem);overflow:auto">
-        <div style="display:flex;flex-direction:column;align-items:center;justify-content:center">
-          <div class="input input-bordered input-sm" style="display:flex;align-items:center;gap:8px;width:calc(100% - 2rem);margin-right:16px;margin-left:16px;margin-bottom:8px">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div style="position:relative;width:100%;height:100%">
+          <div id="home-map" style="height:calc(100vh - 4.5rem - 6rem);width:100%"></div>
+          <div style="position:absolute;top:0;left:0;right:0;z-index:1000;pointer-events:none">
+            <div style="pointer-events:auto">
+              <div style="display:flex;align-items:center;gap:8px;width:calc(100% - 2rem);margin-top:0.5rem;margin-right:1rem;margin-left:1rem" class="input input-bordered input-sm">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path fill-rule="evenodd" clip-rule="evenodd" d="M19.5306 18.4694L14.8366 13.7762C17.6629 10.383 17.3204 5.36693 14.0591 2.38935C10.7978 -0.588237 5.77134 -0.474001 2.64867 2.64867C-0.474001 5.77134 -0.588237 10.7978 2.38935 14.0591C5.36693 17.3204 10.383 17.6629 13.7762 14.8366L18.4694 19.5306C18.7624 19.8237 19.2376 19.8237 19.5306 19.5306C19.8237 19.2376 19.8237 18.7624 19.5306 18.4694ZM1.75 8.5C1.75 4.77208 4.77208 1.75 8.5 1.75C12.2279 1.75 15.25 4.77208 15.25 8.5C15.25 12.2279 12.2279 15.25 8.5 15.25C4.77379 15.2459 1.75413 12.2262 1.75 8.5Z" fill="#4F964F"/>
 		</svg>
-            <input type="text" class="grow" placeholder="Pesquisar trilhas" disabled="false">
+                <input type="text" class="grow" placeholder="Pesquisar trilhas" disabled="false">
+              </div>
+              <div style="display:flex;gap:0.5rem;max-width:100vw;overflow:auto;margin-bottom:0.5rem;margin-top:0.5rem;margin-right:1rem;margin-left:1rem">
+                <button class="btn btn-primary btn-sm">Dificuldade</button>
+                <button class="btn btn-primary btn-sm">Atividade</button>
+                <button class="btn btn-primary btn-sm">Duração</button>
+                <button class="btn btn-primary btn-sm">Avaliação</button>
+              </div>
+            </div>
           </div>
-          <div style="display:flex;gap:0.5rem;max-width:100vw;overflow:auto;padding:1rem;margin-bottom:0.5rem">
-            <button class="btn btn-sm">Localização</button>
-            <button class="btn btn-sm">Dificuldade</button>
-            <button class="btn btn-sm">Atividade</button>
-            <button class="btn btn-sm">Duração</button>
-            <button class="btn btn-sm">Avaliação</button>
-          </div>
-          <h2 style="width:100%;padding:8px 16px;font-size:22px;font-weight:bold">Trilhas em Destaque</h2>
         </div>
       </div>
       <div class="dock" style="height:6rem;display:flex;align-items:center;justify-content:center;gap:0.5rem;min-width:100vw;max-width:100vw;border-top:1px solid #D1D1D1">
@@ -69,7 +74,7 @@
 					<path fill-rule="evenodd" clip-rule="evenodd" d="M16.75 0H1.75C0.921573 0 0.25 0.671573 0.25 1.5V16.5C0.25 17.3284 0.921573 18 1.75 18H16.75C17.5784 18 18.25 17.3284 18.25 16.5V1.5C18.25 0.671573 17.5784 0 16.75 0ZM16.75 16.5H1.75V1.5H16.75V16.5ZM13.75 9C13.75 9.41421 13.4142 9.75 13 9.75H10V12.75C10 13.1642 9.66421 13.5 9.25 13.5C8.83579 13.5 8.5 13.1642 8.5 12.75V9.75H5.5C5.08579 9.75 4.75 9.41421 4.75 9C4.75 8.58579 5.08579 8.25 5.5 8.25H8.5V5.25C8.5 4.83579 8.83579 4.5 9.25 4.5C9.66421 4.5 10 4.83579 10 5.25V8.25H13C13.4142 8.25 13.75 8.58579 13.75 9Z" fill="#333C4D"/>
 				</svg>
           </div>
-          <span class="dock-label" style="font-size:0.75rem">Gravar</span>
+          <span style="font-size:0.75rem" class="dock-label">Gravar</span>
         </button>
         <button style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.25rem;background:none;cursor:pointer;width:4rem;height:5.5rem">
           <div style="display:flex;align-items:center;justify-content:center">
@@ -77,7 +82,7 @@
 					<path fill-rule="evenodd" clip-rule="evenodd" d="M20.1488 17.875C18.7209 15.4066 16.5206 13.6366 13.9528 12.7975C16.5635 11.2433 17.8141 8.13638 17.0082 5.2069C16.2022 2.27741 13.5383 0.247449 10.5 0.247449C7.46167 0.247449 4.79779 2.27741 3.99182 5.2069C3.18585 8.13638 4.43645 11.2433 7.04719 12.7975C4.47938 13.6356 2.27906 15.4056 0.85125 17.875C0.708704 18.1074 0.703527 18.3989 0.837731 18.6363C0.971935 18.8736 1.22438 19.0194 1.49702 19.0171C1.76967 19.0147 2.01958 18.8646 2.14969 18.625C3.91594 15.5725 7.03781 13.75 10.5 13.75C13.9622 13.75 17.0841 15.5725 18.8503 18.625C18.9804 18.8646 19.2303 19.0147 19.503 19.0171C19.7756 19.0194 20.0281 18.8736 20.1623 18.6363C20.2965 18.3989 20.2913 18.1074 20.1488 17.875ZM5.25 7C5.25 4.1005 7.6005 1.75 10.5 1.75C13.3995 1.75 15.75 4.1005 15.75 7C15.75 9.8995 13.3995 12.25 10.5 12.25C7.60179 12.2469 5.2531 9.89821 5.25 7Z" fill="#333C4D"/>
 				</svg>
           </div>
-          <span style="font-size:0.75rem" class="dock-label">Perfil</span>
+          <span class="dock-label" style="font-size:0.75rem">Perfil</span>
         </button>
         <button style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.25rem;background:none;cursor:pointer;width:4rem;height:5.5rem">
           <div style="display:flex;align-items:center;justify-content:center">
@@ -90,7 +95,7 @@
       </div>
     </div>
     <aside id="app-wasm-loader" class="goapp-app-info">
-      <img class="goapp-logo goapp-spin" alt="wasm loader icon" src="https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.png" id="app-wasm-loader-icon">
+      <img id="app-wasm-loader-icon" class="goapp-logo goapp-spin" alt="wasm loader icon" src="https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.png">
       <p id="app-wasm-loader-label" class="goapp-label">0%</p>
     </aside>
   </body>
