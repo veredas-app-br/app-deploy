@@ -5,7 +5,7 @@
     <meta name="author">
     <meta name="description" content="Aplicação de Trilhas">
     <meta name="theme-color" content="#66CC8A">
-    <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="mobile-web-app-capable" content="yes">
     <meta property="og:url" content="https:///app-deploy">
     <meta property="og:title">
@@ -14,14 +14,14 @@
     <meta property="og:image" content="https://">
     <title></title>
     <link rel="icon" href="/app-deploy/web/icon.svg">
-    <link rel="apple-touch-icon" href="/app-deploy/web/icon.svg">
+    <link href="/app-deploy/web/icon.svg" rel="apple-touch-icon">
     <link rel="manifest" href="/app-deploy/manifest.webmanifest">
     <link href="/app-deploy/app.css" type="text/css" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="/app-deploy/web/animations.css">
+    <link href="/app-deploy/web/animations.css" type="text/css" rel="stylesheet">
     <link href="/app-deploy/web/leaflet.css" type="text/css" rel="stylesheet">
     <link href="/app-deploy/web/veredas.css" type="text/css" rel="stylesheet">
     <script defer src="/app-deploy/wasm_exec.js"></script>
-    <script src="/app-deploy/app.js" defer></script>
+    <script defer src="/app-deploy/app.js"></script>
     <script src="/app-deploy/web/leaflet.js"></script>
   </head>
   <body>
@@ -39,7 +39,7 @@
           <div style="position:absolute;top:4.5rem;left:0;right:0;z-index:1000;pointer-events:none">
             <div style="pointer-events:auto">
               <div class="veredas-control veredas-home-text-search veredas-has-icons-left">
-                <input disabled="false" type="text" class="veredas-text-input veredas-text-input-is-small" placeholder="Pesquisar trilhas">
+                <input type="text" class="veredas-text-input veredas-text-input-is-small" placeholder="Pesquisar trilhas" disabled="false">
                 <span class="icon is-small is-left">
                   <i class="veredas-home-search-icon"></i>
                 </span>
@@ -85,7 +85,7 @@
 					<path fill-rule="evenodd" clip-rule="evenodd" d="M12.75 0H2.25C1.42157 0 0.75 0.671573 0.75 1.5V18C0.750135 18.2726 0.898147 18.5236 1.13659 18.6557C1.37503 18.7878 1.66636 18.7801 1.8975 18.6356L7.5 15.1341L13.1034 18.6356C13.3345 18.7796 13.6255 18.787 13.8636 18.655C14.1018 18.523 14.2497 18.2723 14.25 18V1.5C14.25 0.671573 13.5784 0 12.75 0ZM12.75 1.5V12.1472L7.89656 9.11438C7.65336 8.96237 7.34477 8.96237 7.10156 9.11438L2.25 12.1462V1.5H12.75ZM7.89656 13.6144C7.65336 13.4624 7.34477 13.4624 7.10156 13.6144L2.25 16.6472V13.9153L7.5 10.6341L12.75 13.9153V16.6472L7.89656 13.6144Z" fill="#333C4D"/>
 				</svg>
           </div>
-          <span style="font-size:0.75rem" class="dock-label">Favoritos</span>
+          <span class="dock-label" style="font-size:0.75rem">Favoritos</span>
         </button>
       </div>
     </div>
