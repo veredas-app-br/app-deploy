@@ -1,14 +1,14 @@
 // -----------------------------------------------------------------------------
 // PWA
 // -----------------------------------------------------------------------------
-const cacheName = "app-" + "d7b3cd2ddbe8b087cce43d7bfdb9e2042afb6cb1";
+const cacheName = "app-" + "d79e6bed9dd48bed7be63953a058506b291e0c7e";
 const tilesCacheName = "osm-tiles-v1";
 const TILE_CACHE_DURATION = 7 * 24 * 60 * 60 * 1000; // 7 days in milliseconds
 const resourcesToCache = ["/app-deploy/web/veredas.css","/app-deploy/web/leaflet.js","/app-deploy/web/leaflet.css","/app-deploy/web/icon.svg","/app-deploy/web/app.wasm","/app-deploy/web/animations.css","/app-deploy/wasm_exec.js","/app-deploy/manifest.webmanifest","/app-deploy/app.js","/app-deploy/app.css","/app-deploy"];
 
 self.addEventListener("install", async (event) => {
   try {
-    console.log("installing app worker d7b3cd2ddbe8b087cce43d7bfdb9e2042afb6cb1");
+    console.log("installing app worker d79e6bed9dd48bed7be63953a058506b291e0c7e");
     await installWorker();
     await self.skipWaiting();
   } catch (error) {
@@ -26,7 +26,7 @@ self.addEventListener("activate", async (event) => {
     await deletePreviousCaches();
     await cleanupOldTiles();
     await self.clients.claim();
-    console.log("app worker d7b3cd2ddbe8b087cce43d7bfdb9e2042afb6cb1 is activated");
+    console.log("app worker d79e6bed9dd48bed7be63953a058506b291e0c7e is activated");
   } catch (error) {
     console.error("error during activation:", error);
   }
