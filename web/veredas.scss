@@ -1,18 +1,18 @@
 // Import Font Awesome
 // customize variables
-@use '@fortawesome/fontawesome-free/scss/variables' with (
-    $font-path: "/web/webfonts",
+@use '../node_modules/@fortawesome/fontawesome-free/scss/variables' with (
+    $font-path: "#{envvar("DEPLOY_REPOSITORY_NAME")}/web/webfonts",
 );
 // load Font Awesome core
-@use "@fortawesome/fontawesome-free/scss/fontawesome";
+@use "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
 // load and make available Font Awesome helpers (mixins, functions, and variables)
-@use "@fortawesome/fontawesome-free/scss/fa" as fa;
+@use "../node_modules/@fortawesome/fontawesome-free/scss/fa" as fa;
 
 // load individual Font Awesome styles
-@use "@fortawesome/fontawesome-free/scss/solid";
+@use "../node_modules/@fortawesome/fontawesome-free/scss/solid";
 
 // Path to Bulma's sass folder
-@use "bulma/sass" with (
+@use "../node_modules/bulma/sass" with (
     $family-primary: '"Nunito", sans-serif',
     $grey-dark: #D1D1D1,
     $grey-light: #E8E8E8,

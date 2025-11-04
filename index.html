@@ -9,15 +9,15 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta property="og:url" content="https:///app-deploy">
     <meta property="og:title">
-    <meta property="og:description" content="Aplicação de Trilhas">
+    <meta content="Aplicação de Trilhas" property="og:description">
     <meta property="og:type" content="website">
-    <meta content="https://" property="og:image">
+    <meta property="og:image" content="https://">
     <title></title>
-    <link rel="icon" href="/app-deploy/web/icon.svg">
+    <link href="/app-deploy/web/icon.svg" rel="icon">
     <link rel="apple-touch-icon" href="/app-deploy/web/icon.svg">
     <link rel="manifest" href="/app-deploy/manifest.webmanifest">
-    <link type="text/css" rel="stylesheet" href="/app-deploy/app.css">
-    <link href="/app-deploy/web/animations.css" type="text/css" rel="stylesheet">
+    <link href="/app-deploy/app.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="/app-deploy/web/animations.css" type="text/css">
     <link href="/app-deploy/web/leaflet.css" type="text/css" rel="stylesheet">
     <link href="/app-deploy/web/veredas.css" type="text/css" rel="stylesheet">
     <script defer src="/app-deploy/wasm_exec.js"></script>
@@ -54,7 +54,7 @@
           </div>
         </div>
       </div>
-      <div style="height:6rem;display:flex;align-items:center;justify-content:center;min-width:100vw;max-width:100vw;border-top:1px solid #D1D1D1" class="dock">
+      <div class="dock" style="height:6rem;display:flex;align-items:center;justify-content:center;min-width:100vw;max-width:100vw;border-top:1px solid #D1D1D1">
         <button style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.25rem;background:none;cursor:pointer;width:25vw;height:5.5rem;filter:brightness(0) saturate(100%) invert(75%) sepia(32%) saturate(516%) hue-rotate(92deg) brightness(98%) contrast(86%)">
           <div style="display:flex;align-items:center;justify-content:center">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -85,13 +85,13 @@
 					<path fill-rule="evenodd" clip-rule="evenodd" d="M12.75 0H2.25C1.42157 0 0.75 0.671573 0.75 1.5V18C0.750135 18.2726 0.898147 18.5236 1.13659 18.6557C1.37503 18.7878 1.66636 18.7801 1.8975 18.6356L7.5 15.1341L13.1034 18.6356C13.3345 18.7796 13.6255 18.787 13.8636 18.655C14.1018 18.523 14.2497 18.2723 14.25 18V1.5C14.25 0.671573 13.5784 0 12.75 0ZM12.75 1.5V12.1472L7.89656 9.11438C7.65336 8.96237 7.34477 8.96237 7.10156 9.11438L2.25 12.1462V1.5H12.75ZM7.89656 13.6144C7.65336 13.4624 7.34477 13.4624 7.10156 13.6144L2.25 16.6472V13.9153L7.5 10.6341L12.75 13.9153V16.6472L7.89656 13.6144Z" fill="#333C4D"/>
 				</svg>
           </div>
-          <span style="font-size:0.75rem" class="dock-label">Favoritos</span>
+          <span class="dock-label" style="font-size:0.75rem">Favoritos</span>
         </button>
       </div>
     </div>
     <aside id="app-wasm-loader" class="goapp-app-info">
-      <img id="app-wasm-loader-icon" class="goapp-logo goapp-spin" alt="wasm loader icon" src="/app-deploy/web/icon.svg">
-      <p id="app-wasm-loader-label" class="goapp-label">0%</p>
+      <img src="/app-deploy/web/icon.svg" id="app-wasm-loader-icon" class="goapp-logo goapp-spin" alt="wasm loader icon">
+      <p class="goapp-label" id="app-wasm-loader-label">0%</p>
     </aside>
   </body>
 </html>
