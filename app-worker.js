@@ -1,14 +1,14 @@
 // -----------------------------------------------------------------------------
 // PWA
 // -----------------------------------------------------------------------------
-const cacheName = "app-" + "db7b7fe13bdb11353b27511070379f0740e3c808";
+const cacheName = "app-" + "c0f19b57ec30e3c7d3001e19ecc8b281fa123462";
 const tilesCacheName = "osm-tiles-v1";
 const TILE_CACHE_DURATION = 7 * 24 * 60 * 60 * 1000; // 7 days in milliseconds
-const resourcesToCache = ["/app-deploy/web/leaflet.js","/app-deploy/web/leaflet.css","/app-deploy/web/icon.svg","/app-deploy/web/daisyui.css","/app-deploy/web/app.wasm","/app-deploy/web/animations.css","/app-deploy/wasm_exec.js","/app-deploy/manifest.webmanifest","/app-deploy/app.js","/app-deploy/app.css","/app-deploy"];
+const resourcesToCache = ["/app-deploy/web/veredas.css","/app-deploy/web/leaflet.js","/app-deploy/web/leaflet.css","/app-deploy/web/icon.svg","/app-deploy/web/app.wasm","/app-deploy/web/animations.css","/app-deploy/wasm_exec.js","/app-deploy/manifest.webmanifest","/app-deploy/app.js","/app-deploy/app.css","/app-deploy"];
 
 self.addEventListener("install", async (event) => {
   try {
-    console.log("installing app worker db7b7fe13bdb11353b27511070379f0740e3c808");
+    console.log("installing app worker c0f19b57ec30e3c7d3001e19ecc8b281fa123462");
     await installWorker();
     await self.skipWaiting();
   } catch (error) {
@@ -26,7 +26,7 @@ self.addEventListener("activate", async (event) => {
     await deletePreviousCaches();
     await cleanupOldTiles();
     await self.clients.claim();
-    console.log("app worker db7b7fe13bdb11353b27511070379f0740e3c808 is activated");
+    console.log("app worker c0f19b57ec30e3c7d3001e19ecc8b281fa123462 is activated");
   } catch (error) {
     console.error("error during activation:", error);
   }
