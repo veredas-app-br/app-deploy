@@ -1,7 +1,7 @@
 // Import Font Awesome
 // customize variables
 @use '../node_modules/@fortawesome/fontawesome-free/scss/variables' with (
-    $font-path: "#{envvar("DEPLOY_REPOSITORY_NAME")}/web/webfonts",
+    $font-path: "#{getparam(DEPLOY_REPOSITORY_NAME)}/web/webfonts",
 );
 // load Font Awesome core
 @use "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
