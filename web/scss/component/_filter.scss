@@ -1,0 +1,94 @@
+@use "../vendor/bulma" as *;
+
+.veredas {
+    &-filter {
+        &-label {
+            @extend .checkbox;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        &-checkbox {
+            margin-right: 1rem;
+            margin-left: 1rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            height: 1.5rem;
+            width: 1.5rem;
+        }
+
+        &-option {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        &-background-overlay {
+            position: fixed;
+            height: 100vh;
+            width: 100vw;
+            top: 0;
+            right: 0;
+            background-color: #00000077;
+            z-index: 1001;
+            animation: fadeIn 0.3s ease-out;
+
+            &.closing {
+                animation: fadeOut 0.3s ease-out forwards;
+            }
+        }
+
+        &-container {
+            @extend .card;
+            max-height: 100vh;
+            position: fixed;
+            width: 100vw;
+            max-width: 80rem;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+            bottom: 0;
+            z-index: 1002;
+            animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            
+            &.closing {
+                animation: slideDown 0.3s cubic-bezier(0.7, 0, 0.84, 0) forwards;
+            }
+
+            // Apply centering only on large screens where max-width takes effect
+            @media screen and (min-width: 80rem) {
+                left: 50%;
+                transform: translate(-50%, 0);
+                animation: slideUpCentered 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+
+                &.closing {
+                    animation: slideDownCentered 0.3s cubic-bezier(0.7, 0, 0.84, 0) forwards;
+                }
+            }
+        }
+
+        &-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center 
+        }
+
+        &-title {
+            @extend .card-header-title;
+            @extend .is-centered;
+        }
+
+        &-icon-apply {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+        }
+
+        &-icon-close {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 1rem;
+        }
+    }
+}

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="author">
-    <meta name="description" content="Aplicação de Trilhas">
+    <meta content="Aplicação de Trilhas" name="description">
     <meta name="theme-color" content="#66CC8A">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="mobile-web-app-capable" content="yes">
@@ -13,11 +13,11 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://">
     <title></title>
-    <link rel="icon" href="/app-deploy/web/icon.svg">
+    <link href="/app-deploy/web/icon.svg" rel="icon">
     <link rel="apple-touch-icon" href="/app-deploy/web/icon.svg">
     <link rel="manifest" href="/app-deploy/manifest.webmanifest">
     <link href="/app-deploy/app.css" type="text/css" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="/app-deploy/web/animations.css">
+    <link href="/app-deploy/web/animations.css" type="text/css" rel="stylesheet">
     <link href="/app-deploy/web/leaflet.css" type="text/css" rel="stylesheet">
     <link href="/app-deploy/web/veredas.css" type="text/css" rel="stylesheet">
     <script defer src="/app-deploy/wasm_exec.js"></script>
@@ -30,18 +30,18 @@
         <div class="veredas-header-spacer"></div>
         <h1 class="veredas-header-title">Veredas</h1>
         <span class="veredas-header-settings-icon">
-          <i class="veredas-header-settings-icon-fa"></i>
+          <i class="veredas-icon veredas-icon-sliders veredas-header-settings-icon-fa"></i>
         </span>
       </header>
-      <div class="flex-1" style="min-height:calc(100vh - 6rem - 6rem);max-height:calc(100vh - 6rem - 6rem);overflow:auto">
-        <div class="relative w-full h-full">
+      <div class="veredas-app-container">
+        <div>
           <div id="home-map" class="veredas-map-container veredas-home-map"></div>
-          <div style="position:absolute;top:4.5rem;left:0;right:0;z-index:1000;pointer-events:none">
-            <div style="pointer-events:auto">
+          <div class="veredas-home-controls-overlay">
+            <div>
               <div class="veredas-control veredas-home-text-search veredas-has-icons-left">
-                <input type="text" class="veredas-text-input veredas-text-input-is-small" placeholder="Pesquisar trilhas" disabled="false">
+                <input class="veredas-text-input veredas-text-input-is-small" placeholder="Pesquisar trilhas" disabled="false" type="text">
                 <span class="icon is-small is-left">
-                  <i class="veredas-home-search-icon"></i>
+                  <i class="veredas-icon veredas-icon-magnifying-glass"></i>
                 </span>
               </div>
               <div class="veredas-button-group veredas-home-filter-controls">
@@ -54,43 +54,35 @@
           </div>
         </div>
       </div>
-      <div style="height:6rem;display:flex;align-items:center;justify-content:center;min-width:100vw;max-width:100vw;border-top:1px solid #D1D1D1" class="dock">
-        <button style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.25rem;background:none;cursor:pointer;width:25vw;height:5.5rem;filter:brightness(0) saturate(100%) invert(75%) sepia(32%) saturate(516%) hue-rotate(92deg) brightness(98%) contrast(86%)">
-          <div style="display:flex;align-items:center;justify-content:center">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 8.5C13.5 11.3995 11.1495 13.75 8.25 13.75C5.3505 13.75 3 11.3995 3 8.5C3 5.6005 5.3505 3.25 8.25 3.25C11.1495 3.25 13.5 5.6005 13.5 8.5ZM19.2806 19.5306C19.1399 19.6715 18.9491 19.7506 18.75 19.7506C18.5509 19.7506 18.3601 19.6715 18.2194 19.5306L13.5262 14.8366C10.1358 17.6572 5.12647 17.3124 2.15446 14.0538C-0.817553 10.7952 -0.701056 5.77538 2.41892 2.65816C5.5389 -0.459059 10.5588 -0.571119 13.8148 2.40377C17.0708 5.37866 17.4111 10.3883 14.5875 13.7762L19.2806 18.4694C19.4215 18.6101 19.5006 18.8009 19.5006 19C19.5006 19.1991 19.4215 19.3899 19.2806 19.5306ZM8.25 15.25C11.9779 15.25 15 12.2279 15 8.5C15 4.77208 11.9779 1.75 8.25 1.75C4.52208 1.75 1.5 4.77208 1.5 8.5C1.50413 12.2262 4.52379 15.2459 8.25 15.25Z" fill="#333C4D"/>
-				</svg>
+      <div class="veredas-dock-container">
+        <button class="veredas-dock-button veredas-dock-button-active">
+          <div class="veredas-dock-button-icon">
+            <i class="veredas-icon veredas-icon-magnifying-glass"></i>
           </div>
-          <span class="dock-label" style="font-size:0.75rem;color:#66CC8A">Buscar</span>
+          <span class="veredas-dock-button-label veredas-dock-button-label-active">Buscar</span>
         </button>
-        <button style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.25rem;background:none;cursor:pointer;width:25vw;height:5.5rem">
-          <div style="display:flex;align-items:center;justify-content:center">
-            <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path fill-rule="evenodd" clip-rule="evenodd" d="M16.75 0H1.75C0.921573 0 0.25 0.671573 0.25 1.5V16.5C0.25 17.3284 0.921573 18 1.75 18H16.75C17.5784 18 18.25 17.3284 18.25 16.5V1.5C18.25 0.671573 17.5784 0 16.75 0ZM16.75 16.5H1.75V1.5H16.75V16.5ZM13.75 9C13.75 9.41421 13.4142 9.75 13 9.75H10V12.75C10 13.1642 9.66421 13.5 9.25 13.5C8.83579 13.5 8.5 13.1642 8.5 12.75V9.75H5.5C5.08579 9.75 4.75 9.41421 4.75 9C4.75 8.58579 5.08579 8.25 5.5 8.25H8.5V5.25C8.5 4.83579 8.83579 4.5 9.25 4.5C9.66421 4.5 10 4.83579 10 5.25V8.25H13C13.4142 8.25 13.75 8.58579 13.75 9Z" fill="#333C4D"/>
-				</svg>
+        <button class="veredas-dock-button">
+          <div class="veredas-dock-button-icon">
+            <i class="veredas-icon veredas-icon-square-plus"></i>
           </div>
-          <span class="dock-label" style="font-size:0.75rem">Gravar</span>
+          <span class="veredas-dock-button-label">Gravar</span>
         </button>
-        <button style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.25rem;background:none;cursor:pointer;width:25vw;height:5.5rem">
-          <div style="display:flex;align-items:center;justify-content:center">
-            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path fill-rule="evenodd" clip-rule="evenodd" d="M20.1488 17.875C18.7209 15.4066 16.5206 13.6366 13.9528 12.7975C16.5635 11.2433 17.8141 8.13638 17.0082 5.2069C16.2022 2.27741 13.5383 0.247449 10.5 0.247449C7.46167 0.247449 4.79779 2.27741 3.99182 5.2069C3.18585 8.13638 4.43645 11.2433 7.04719 12.7975C4.47938 13.6356 2.27906 15.4056 0.85125 17.875C0.708704 18.1074 0.703527 18.3989 0.837731 18.6363C0.971935 18.8736 1.22438 19.0194 1.49702 19.0171C1.76967 19.0147 2.01958 18.8646 2.14969 18.625C3.91594 15.5725 7.03781 13.75 10.5 13.75C13.9622 13.75 17.0841 15.5725 18.8503 18.625C18.9804 18.8646 19.2303 19.0147 19.503 19.0171C19.7756 19.0194 20.0281 18.8736 20.1623 18.6363C20.2965 18.3989 20.2913 18.1074 20.1488 17.875ZM5.25 7C5.25 4.1005 7.6005 1.75 10.5 1.75C13.3995 1.75 15.75 4.1005 15.75 7C15.75 9.8995 13.3995 12.25 10.5 12.25C7.60179 12.2469 5.2531 9.89821 5.25 7Z" fill="#333C4D"/>
-				</svg>
+        <button class="veredas-dock-button">
+          <div class="veredas-dock-button-icon">
+            <i class="veredas-icon veredas-icon-user"></i>
           </div>
-          <span class="dock-label" style="font-size:0.75rem">Perfil</span>
+          <span class="veredas-dock-button-label">Perfil</span>
         </button>
-        <button style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.25rem;background:none;cursor:pointer;width:25vw;height:5.5rem">
-          <div style="display:flex;align-items:center;justify-content:center">
-            <svg width="15" height="19" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path fill-rule="evenodd" clip-rule="evenodd" d="M12.75 0H2.25C1.42157 0 0.75 0.671573 0.75 1.5V18C0.750135 18.2726 0.898147 18.5236 1.13659 18.6557C1.37503 18.7878 1.66636 18.7801 1.8975 18.6356L7.5 15.1341L13.1034 18.6356C13.3345 18.7796 13.6255 18.787 13.8636 18.655C14.1018 18.523 14.2497 18.2723 14.25 18V1.5C14.25 0.671573 13.5784 0 12.75 0ZM12.75 1.5V12.1472L7.89656 9.11438C7.65336 8.96237 7.34477 8.96237 7.10156 9.11438L2.25 12.1462V1.5H12.75ZM7.89656 13.6144C7.65336 13.4624 7.34477 13.4624 7.10156 13.6144L2.25 16.6472V13.9153L7.5 10.6341L12.75 13.9153V16.6472L7.89656 13.6144Z" fill="#333C4D"/>
-				</svg>
+        <button class="veredas-dock-button">
+          <div class="veredas-dock-button-icon">
+            <i class="veredas-icon veredas-icon-bookmark"></i>
           </div>
-          <span class="dock-label" style="font-size:0.75rem">Favoritos</span>
+          <span class="veredas-dock-button-label">Favoritos</span>
         </button>
       </div>
     </div>
     <aside id="app-wasm-loader" class="goapp-app-info">
-      <img id="app-wasm-loader-icon" class="goapp-logo goapp-spin" alt="wasm loader icon" src="/app-deploy/web/icon.svg">
+      <img class="goapp-logo goapp-spin" alt="wasm loader icon" src="/app-deploy/web/icon.svg" id="app-wasm-loader-icon">
       <p id="app-wasm-loader-label" class="goapp-label">0%</p>
     </aside>
   </body>

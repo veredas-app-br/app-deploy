@@ -1,0 +1,78 @@
+@use "../vendor/bulma" as *;
+
+// Size modifiers
+.veredas {
+    &-is-small {
+        @extend .is-small;
+    }
+
+    &-is-medium {
+        @extend .is-medium;
+    }
+
+    &-is-large {
+        @extend .is-large;
+    }
+}
+
+// Color modifiers
+.veredas {
+    &-is-white {
+        @extend .is-white;
+    }
+
+    &-is-black {
+        @extend .is-black;
+    }
+
+    &-is-light {
+        @extend .is-light;
+    }
+
+    &-is-dark {
+        @extend .is-dark;
+    }
+
+    &-is-text {
+        @extend .is-text;
+    }
+
+    &-is-ghost {
+        @extend .is-ghost;
+    }
+
+    &-is-primary {
+        @extend .is-primary;
+    }
+
+    &-is-link {
+        @extend .is-link;
+    }
+
+    &-is-info {
+        @extend .is-info;
+    }
+
+    &-is-success {
+        @extend .is-success;
+    }
+
+    &-is-warning {
+        @extend .is-warning;
+    }
+
+    &-is-danger {
+        @extend .is-danger;
+    }
+}
+
+// Icon position modifiers
+.veredas {
+    &-has-icons-left {
+        @extend .has-icons-left;
+    }
+
+    &-has-icons-right {
+        @extend .has-icons-right;
+    }
+}

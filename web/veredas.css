@@ -5,7 +5,7 @@
  * Copyright 2025 Fonticons, Inc.
  */
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
-.fa-solid, .veredas-header-settings-icon-fa, .veredas-filter-icon-apply, .veredas-filter-icon-close, .veredas-home-search-icon,
+.fa-solid, .veredas-icon,
 .fa-regular,
 .fa-brands,
 .fa-classic,
@@ -33,10 +33,7 @@
 .far,
 .fab,
 .fa-solid,
-.veredas-header-settings-icon-fa,
-.veredas-filter-icon-apply,
-.veredas-filter-icon-close,
-.veredas-home-search-icon,
+.veredas-icon,
 .fa-regular,
 .fa-brands,
 .fa-classic,
@@ -49,10 +46,7 @@
   .far,
   .fab,
   .fa-solid,
-  .veredas-header-settings-icon-fa,
-  .veredas-filter-icon-apply,
-  .veredas-filter-icon-close,
-  .veredas-home-search-icon,
+  .veredas-icon,
   .fa-regular,
   .fa-brands,
   .fa-classic,
@@ -2189,7 +2183,7 @@
   --fa: "\f001";
 }
 
-.fa-magnifying-glass, .veredas-home-search-icon {
+.fa-magnifying-glass, .veredas-icon-magnifying-glass {
   --fa: "\f002";
 }
 
@@ -2205,7 +2199,7 @@
   --fa: "\f005";
 }
 
-.fa-user {
+.fa-user, .veredas-icon-user {
   --fa: "\f007";
 }
 
@@ -2253,11 +2247,11 @@
   --fa: "\f00b";
 }
 
-.fa-check, .veredas-filter-icon-apply {
+.fa-check, .veredas-icon-check {
   --fa: "\f00c";
 }
 
-.fa-xmark, .veredas-filter-icon-close {
+.fa-xmark, .veredas-icon-xmark {
   --fa: "\f00d";
 }
 
@@ -2449,7 +2443,7 @@
   --fa: "\f02d";
 }
 
-.fa-bookmark {
+.fa-bookmark, .veredas-icon-bookmark {
   --fa: "\f02e";
 }
 
@@ -3385,7 +3379,7 @@
   --fa: "\f0fd";
 }
 
-.fa-square-plus {
+.fa-square-plus, .veredas-icon-square-plus {
   --fa: "\f0fe";
 }
 
@@ -4205,7 +4199,7 @@
   --fa: "\f1dd";
 }
 
-.fa-sliders, .veredas-header-settings-icon-fa {
+.fa-sliders, .veredas-icon-sliders {
   --fa: "\f1de";
 }
 
@@ -4729,7 +4723,7 @@
   --fa: "\f277";
 }
 
-.fa-map {
+.fa-map, .veredas-icon-map {
   --fa: "\f279";
 }
 
@@ -7429,7 +7423,7 @@
   --fa: "\f688";
 }
 
-.fa-magnifying-glass-location {
+.fa-magnifying-glass-location, .veredas-icon-magnifying-glass-location {
   --fa: "\f689";
 }
 
@@ -8397,7 +8391,7 @@
   --fa-family: var(--fa-family-classic);
 }
 
-.fa-solid, .veredas-header-settings-icon-fa, .veredas-filter-icon-apply, .veredas-filter-icon-close, .veredas-home-search-icon {
+.fa-solid, .veredas-icon {
   --fa-style: 900;
 }
 
@@ -8521,33 +8515,33 @@
   --bulma-dark-on-scheme: hsla(var(--bulma-dark-h), var(--bulma-dark-s), var(--bulma-dark-on-scheme-l), 1);
   --bulma-text: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-l), 1);
   --bulma-text-base: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-l), 1);
-  --bulma-text-rgb: 209, 209, 209;
-  --bulma-text-h: 0deg;
-  --bulma-text-s: 0%;
-  --bulma-text-l: 82%;
-  --bulma-text-00-l: 2%;
-  --bulma-text-05-l: 7%;
-  --bulma-text-10-l: 12%;
-  --bulma-text-15-l: 17%;
-  --bulma-text-20-l: 22%;
-  --bulma-text-25-l: 27%;
-  --bulma-text-30-l: 32%;
-  --bulma-text-35-l: 37%;
-  --bulma-text-40-l: 42%;
-  --bulma-text-45-l: 47%;
-  --bulma-text-50-l: 52%;
-  --bulma-text-55-l: 57%;
-  --bulma-text-60-l: 62%;
-  --bulma-text-65-l: 67%;
-  --bulma-text-70-l: 72%;
-  --bulma-text-75-l: 77%;
-  --bulma-text-80-l: 82%;
-  --bulma-text-85-l: 87%;
-  --bulma-text-90-l: 92%;
-  --bulma-text-95-l: 97%;
-  --bulma-text-100-l: 100%;
+  --bulma-text-rgb: 63.597, 70.1539, 84.303;
+  --bulma-text-h: 221deg;
+  --bulma-text-s: 14%;
+  --bulma-text-l: 29%;
+  --bulma-text-00-l: 0%;
+  --bulma-text-05-l: 4%;
+  --bulma-text-10-l: 9%;
+  --bulma-text-15-l: 14%;
+  --bulma-text-20-l: 19%;
+  --bulma-text-25-l: 24%;
+  --bulma-text-30-l: 29%;
+  --bulma-text-35-l: 34%;
+  --bulma-text-40-l: 39%;
+  --bulma-text-45-l: 44%;
+  --bulma-text-50-l: 49%;
+  --bulma-text-55-l: 54%;
+  --bulma-text-60-l: 59%;
+  --bulma-text-65-l: 64%;
+  --bulma-text-70-l: 69%;
+  --bulma-text-75-l: 74%;
+  --bulma-text-80-l: 79%;
+  --bulma-text-85-l: 84%;
+  --bulma-text-90-l: 89%;
+  --bulma-text-95-l: 94%;
+  --bulma-text-100-l: 99%;
   --bulma-text-00: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-00-l), 1);
-  --bulma-text-00-invert-l: var(--bulma-text-55-l);
+  --bulma-text-00-invert-l: var(--bulma-text-60-l);
   --bulma-text-00-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-00-invert-l), 1);
   --bulma-text-05: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-05-l), 1);
   --bulma-text-05-invert-l: var(--bulma-text-60-l);
@@ -8556,13 +8550,13 @@
   --bulma-text-10-invert-l: var(--bulma-text-70-l);
   --bulma-text-10-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-10-invert-l), 1);
   --bulma-text-15: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-15-l), 1);
-  --bulma-text-15-invert-l: var(--bulma-text-80-l);
+  --bulma-text-15-invert-l: var(--bulma-text-75-l);
   --bulma-text-15-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-15-invert-l), 1);
   --bulma-text-20: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-20-l), 1);
-  --bulma-text-20-invert-l: var(--bulma-text-90-l);
+  --bulma-text-20-invert-l: var(--bulma-text-85-l);
   --bulma-text-20-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-20-invert-l), 1);
   --bulma-text-25: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-25-l), 1);
-  --bulma-text-25-invert-l: var(--bulma-text-100-l);
+  --bulma-text-25-invert-l: var(--bulma-text-95-l);
   --bulma-text-25-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-25-invert-l), 1);
   --bulma-text-30: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-30-l), 1);
   --bulma-text-30-invert-l: var(--bulma-text-100-l);
@@ -8580,7 +8574,7 @@
   --bulma-text-50-invert-l: var(--bulma-text-100-l);
   --bulma-text-50-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-50-invert-l), 1);
   --bulma-text-55: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-55-l), 1);
-  --bulma-text-55-invert-l: var(--bulma-text-00-l);
+  --bulma-text-55-invert-l: var(--bulma-text-100-l);
   --bulma-text-55-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-55-invert-l), 1);
   --bulma-text-60: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-60-l), 1);
   --bulma-text-60-invert-l: var(--bulma-text-05-l);
@@ -8592,24 +8586,24 @@
   --bulma-text-70-invert-l: var(--bulma-text-10-l);
   --bulma-text-70-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-70-invert-l), 1);
   --bulma-text-75: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-75-l), 1);
-  --bulma-text-75-invert-l: var(--bulma-text-10-l);
+  --bulma-text-75-invert-l: var(--bulma-text-15-l);
   --bulma-text-75-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-75-invert-l), 1);
   --bulma-text-80: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-80-l), 1);
   --bulma-text-80-invert-l: var(--bulma-text-15-l);
   --bulma-text-80-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-80-invert-l), 1);
   --bulma-text-85: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-85-l), 1);
-  --bulma-text-85-invert-l: var(--bulma-text-15-l);
+  --bulma-text-85-invert-l: var(--bulma-text-20-l);
   --bulma-text-85-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-85-invert-l), 1);
   --bulma-text-90: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-90-l), 1);
   --bulma-text-90-invert-l: var(--bulma-text-20-l);
   --bulma-text-90-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-90-invert-l), 1);
   --bulma-text-95: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-95-l), 1);
-  --bulma-text-95-invert-l: var(--bulma-text-20-l);
+  --bulma-text-95-invert-l: var(--bulma-text-25-l);
   --bulma-text-95-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-95-invert-l), 1);
   --bulma-text-100: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-100-l), 1);
   --bulma-text-100-invert-l: var(--bulma-text-25-l);
   --bulma-text-100-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-100-invert-l), 1);
-  --bulma-text-invert-l: var(--bulma-text-15-l);
+  --bulma-text-invert-l: var(--bulma-text-100-l);
   --bulma-text-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-invert-l), 1);
   --bulma-text-light-l: var(--bulma-text-90-l);
   --bulma-text-light: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-light-l), 1);
@@ -8623,7 +8617,7 @@
   --bulma-text-bold: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-bold-l), 1);
   --bulma-text-soft-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-soft-invert-l), 1);
   --bulma-text-bold-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-bold-invert-l), 1);
-  --bulma-text-on-scheme-l: 31.9607843137%;
+  --bulma-text-on-scheme-l: 29%;
   --bulma-text-on-scheme: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-on-scheme-l), 1);
   --bulma-primary: hsla(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l), 1);
   --bulma-primary-base: hsla(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l), 1);
@@ -9264,9 +9258,9 @@
   --bulma-black-bis: hsl(221, 14%, 9%);
   --bulma-black-ter: hsl(221, 14%, 14%);
   --bulma-grey-darker: hsl(221, 14%, 21%);
-  --bulma-grey-dark: #D1D1D1;
+  --bulma-grey-dark: hsl(221, 14%, 29%);
   --bulma-grey: hsl(221, 14%, 48%);
-  --bulma-grey-light: #E8E8E8;
+  --bulma-grey-light: hsl(221, 14%, 71%);
   --bulma-grey-lighter: hsl(221, 14%, 86%);
   --bulma-white-ter: hsl(221, 14%, 96%);
   --bulma-white-bis: hsl(221, 14%, 98%);
@@ -9422,33 +9416,33 @@
     --bulma-dark-on-scheme: hsla(var(--bulma-dark-h), var(--bulma-dark-s), var(--bulma-dark-on-scheme-l), 1);
     --bulma-text: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-l), 1);
     --bulma-text-base: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-l), 1);
-    --bulma-text-rgb: 209, 209, 209;
-    --bulma-text-h: 0deg;
-    --bulma-text-s: 0%;
-    --bulma-text-l: 82%;
-    --bulma-text-00-l: 2%;
-    --bulma-text-05-l: 7%;
-    --bulma-text-10-l: 12%;
-    --bulma-text-15-l: 17%;
-    --bulma-text-20-l: 22%;
-    --bulma-text-25-l: 27%;
-    --bulma-text-30-l: 32%;
-    --bulma-text-35-l: 37%;
-    --bulma-text-40-l: 42%;
-    --bulma-text-45-l: 47%;
-    --bulma-text-50-l: 52%;
-    --bulma-text-55-l: 57%;
-    --bulma-text-60-l: 62%;
-    --bulma-text-65-l: 67%;
-    --bulma-text-70-l: 72%;
-    --bulma-text-75-l: 77%;
-    --bulma-text-80-l: 82%;
-    --bulma-text-85-l: 87%;
-    --bulma-text-90-l: 92%;
-    --bulma-text-95-l: 97%;
-    --bulma-text-100-l: 100%;
+    --bulma-text-rgb: 63.597, 70.1539, 84.303;
+    --bulma-text-h: 221deg;
+    --bulma-text-s: 14%;
+    --bulma-text-l: 29%;
+    --bulma-text-00-l: 0%;
+    --bulma-text-05-l: 4%;
+    --bulma-text-10-l: 9%;
+    --bulma-text-15-l: 14%;
+    --bulma-text-20-l: 19%;
+    --bulma-text-25-l: 24%;
+    --bulma-text-30-l: 29%;
+    --bulma-text-35-l: 34%;
+    --bulma-text-40-l: 39%;
+    --bulma-text-45-l: 44%;
+    --bulma-text-50-l: 49%;
+    --bulma-text-55-l: 54%;
+    --bulma-text-60-l: 59%;
+    --bulma-text-65-l: 64%;
+    --bulma-text-70-l: 69%;
+    --bulma-text-75-l: 74%;
+    --bulma-text-80-l: 79%;
+    --bulma-text-85-l: 84%;
+    --bulma-text-90-l: 89%;
+    --bulma-text-95-l: 94%;
+    --bulma-text-100-l: 99%;
     --bulma-text-00: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-00-l), 1);
-    --bulma-text-00-invert-l: var(--bulma-text-55-l);
+    --bulma-text-00-invert-l: var(--bulma-text-60-l);
     --bulma-text-00-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-00-invert-l), 1);
     --bulma-text-05: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-05-l), 1);
     --bulma-text-05-invert-l: var(--bulma-text-60-l);
@@ -9457,13 +9451,13 @@
     --bulma-text-10-invert-l: var(--bulma-text-70-l);
     --bulma-text-10-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-10-invert-l), 1);
     --bulma-text-15: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-15-l), 1);
-    --bulma-text-15-invert-l: var(--bulma-text-80-l);
+    --bulma-text-15-invert-l: var(--bulma-text-75-l);
     --bulma-text-15-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-15-invert-l), 1);
     --bulma-text-20: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-20-l), 1);
-    --bulma-text-20-invert-l: var(--bulma-text-90-l);
+    --bulma-text-20-invert-l: var(--bulma-text-85-l);
     --bulma-text-20-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-20-invert-l), 1);
     --bulma-text-25: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-25-l), 1);
-    --bulma-text-25-invert-l: var(--bulma-text-100-l);
+    --bulma-text-25-invert-l: var(--bulma-text-95-l);
     --bulma-text-25-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-25-invert-l), 1);
     --bulma-text-30: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-30-l), 1);
     --bulma-text-30-invert-l: var(--bulma-text-100-l);
@@ -9481,7 +9475,7 @@
     --bulma-text-50-invert-l: var(--bulma-text-100-l);
     --bulma-text-50-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-50-invert-l), 1);
     --bulma-text-55: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-55-l), 1);
-    --bulma-text-55-invert-l: var(--bulma-text-00-l);
+    --bulma-text-55-invert-l: var(--bulma-text-100-l);
     --bulma-text-55-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-55-invert-l), 1);
     --bulma-text-60: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-60-l), 1);
     --bulma-text-60-invert-l: var(--bulma-text-05-l);
@@ -9493,24 +9487,24 @@
     --bulma-text-70-invert-l: var(--bulma-text-10-l);
     --bulma-text-70-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-70-invert-l), 1);
     --bulma-text-75: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-75-l), 1);
-    --bulma-text-75-invert-l: var(--bulma-text-10-l);
+    --bulma-text-75-invert-l: var(--bulma-text-15-l);
     --bulma-text-75-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-75-invert-l), 1);
     --bulma-text-80: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-80-l), 1);
     --bulma-text-80-invert-l: var(--bulma-text-15-l);
     --bulma-text-80-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-80-invert-l), 1);
     --bulma-text-85: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-85-l), 1);
-    --bulma-text-85-invert-l: var(--bulma-text-15-l);
+    --bulma-text-85-invert-l: var(--bulma-text-20-l);
     --bulma-text-85-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-85-invert-l), 1);
     --bulma-text-90: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-90-l), 1);
     --bulma-text-90-invert-l: var(--bulma-text-20-l);
     --bulma-text-90-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-90-invert-l), 1);
     --bulma-text-95: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-95-l), 1);
-    --bulma-text-95-invert-l: var(--bulma-text-20-l);
+    --bulma-text-95-invert-l: var(--bulma-text-25-l);
     --bulma-text-95-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-95-invert-l), 1);
     --bulma-text-100: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-100-l), 1);
     --bulma-text-100-invert-l: var(--bulma-text-25-l);
     --bulma-text-100-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-100-invert-l), 1);
-    --bulma-text-invert-l: var(--bulma-text-15-l);
+    --bulma-text-invert-l: var(--bulma-text-100-l);
     --bulma-text-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-invert-l), 1);
     --bulma-text-light-l: var(--bulma-text-90-l);
     --bulma-text-light: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-light-l), 1);
@@ -9524,7 +9518,7 @@
     --bulma-text-bold: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-bold-l), 1);
     --bulma-text-soft-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-soft-invert-l), 1);
     --bulma-text-bold-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-bold-invert-l), 1);
-    --bulma-text-on-scheme-l: 31.9607843137%;
+    --bulma-text-on-scheme-l: 29%;
     --bulma-text-on-scheme: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-on-scheme-l), 1);
     --bulma-primary: hsla(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l), 1);
     --bulma-primary-base: hsla(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l), 1);
@@ -10165,9 +10159,9 @@
     --bulma-black-bis: hsl(221, 14%, 9%);
     --bulma-black-ter: hsl(221, 14%, 14%);
     --bulma-grey-darker: hsl(221, 14%, 21%);
-    --bulma-grey-dark: #D1D1D1;
+    --bulma-grey-dark: hsl(221, 14%, 29%);
     --bulma-grey: hsl(221, 14%, 48%);
-    --bulma-grey-light: #E8E8E8;
+    --bulma-grey-light: hsl(221, 14%, 71%);
     --bulma-grey-lighter: hsl(221, 14%, 86%);
     --bulma-white-ter: hsl(221, 14%, 96%);
     --bulma-white-bis: hsl(221, 14%, 98%);
@@ -10193,7 +10187,7 @@
     --bulma-light-on-scheme: hsla(var(--bulma-light-h), var(--bulma-light-s), var(--bulma-light-on-scheme-l), 1);
     --bulma-dark-on-scheme-l: 56%;
     --bulma-dark-on-scheme: hsla(var(--bulma-dark-h), var(--bulma-dark-s), var(--bulma-dark-on-scheme-l), 1);
-    --bulma-text-on-scheme-l: 81.9607843137%;
+    --bulma-text-on-scheme-l: 54%;
     --bulma-text-on-scheme: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-on-scheme-l), 1);
     --bulma-primary-on-scheme-l: 60%;
     --bulma-primary-on-scheme: hsla(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-on-scheme-l), 1);
@@ -10340,33 +10334,33 @@
   --bulma-dark-on-scheme: hsla(var(--bulma-dark-h), var(--bulma-dark-s), var(--bulma-dark-on-scheme-l), 1);
   --bulma-text: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-l), 1);
   --bulma-text-base: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-l), 1);
-  --bulma-text-rgb: 209, 209, 209;
-  --bulma-text-h: 0deg;
-  --bulma-text-s: 0%;
-  --bulma-text-l: 82%;
-  --bulma-text-00-l: 2%;
-  --bulma-text-05-l: 7%;
-  --bulma-text-10-l: 12%;
-  --bulma-text-15-l: 17%;
-  --bulma-text-20-l: 22%;
-  --bulma-text-25-l: 27%;
-  --bulma-text-30-l: 32%;
-  --bulma-text-35-l: 37%;
-  --bulma-text-40-l: 42%;
-  --bulma-text-45-l: 47%;
-  --bulma-text-50-l: 52%;
-  --bulma-text-55-l: 57%;
-  --bulma-text-60-l: 62%;
-  --bulma-text-65-l: 67%;
-  --bulma-text-70-l: 72%;
-  --bulma-text-75-l: 77%;
-  --bulma-text-80-l: 82%;
-  --bulma-text-85-l: 87%;
-  --bulma-text-90-l: 92%;
-  --bulma-text-95-l: 97%;
-  --bulma-text-100-l: 100%;
+  --bulma-text-rgb: 63.597, 70.1539, 84.303;
+  --bulma-text-h: 221deg;
+  --bulma-text-s: 14%;
+  --bulma-text-l: 29%;
+  --bulma-text-00-l: 0%;
+  --bulma-text-05-l: 4%;
+  --bulma-text-10-l: 9%;
+  --bulma-text-15-l: 14%;
+  --bulma-text-20-l: 19%;
+  --bulma-text-25-l: 24%;
+  --bulma-text-30-l: 29%;
+  --bulma-text-35-l: 34%;
+  --bulma-text-40-l: 39%;
+  --bulma-text-45-l: 44%;
+  --bulma-text-50-l: 49%;
+  --bulma-text-55-l: 54%;
+  --bulma-text-60-l: 59%;
+  --bulma-text-65-l: 64%;
+  --bulma-text-70-l: 69%;
+  --bulma-text-75-l: 74%;
+  --bulma-text-80-l: 79%;
+  --bulma-text-85-l: 84%;
+  --bulma-text-90-l: 89%;
+  --bulma-text-95-l: 94%;
+  --bulma-text-100-l: 99%;
   --bulma-text-00: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-00-l), 1);
-  --bulma-text-00-invert-l: var(--bulma-text-55-l);
+  --bulma-text-00-invert-l: var(--bulma-text-60-l);
   --bulma-text-00-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-00-invert-l), 1);
   --bulma-text-05: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-05-l), 1);
   --bulma-text-05-invert-l: var(--bulma-text-60-l);
@@ -10375,13 +10369,13 @@
   --bulma-text-10-invert-l: var(--bulma-text-70-l);
   --bulma-text-10-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-10-invert-l), 1);
   --bulma-text-15: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-15-l), 1);
-  --bulma-text-15-invert-l: var(--bulma-text-80-l);
+  --bulma-text-15-invert-l: var(--bulma-text-75-l);
   --bulma-text-15-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-15-invert-l), 1);
   --bulma-text-20: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-20-l), 1);
-  --bulma-text-20-invert-l: var(--bulma-text-90-l);
+  --bulma-text-20-invert-l: var(--bulma-text-85-l);
   --bulma-text-20-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-20-invert-l), 1);
   --bulma-text-25: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-25-l), 1);
-  --bulma-text-25-invert-l: var(--bulma-text-100-l);
+  --bulma-text-25-invert-l: var(--bulma-text-95-l);
   --bulma-text-25-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-25-invert-l), 1);
   --bulma-text-30: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-30-l), 1);
   --bulma-text-30-invert-l: var(--bulma-text-100-l);
@@ -10399,7 +10393,7 @@
   --bulma-text-50-invert-l: var(--bulma-text-100-l);
   --bulma-text-50-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-50-invert-l), 1);
   --bulma-text-55: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-55-l), 1);
-  --bulma-text-55-invert-l: var(--bulma-text-00-l);
+  --bulma-text-55-invert-l: var(--bulma-text-100-l);
   --bulma-text-55-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-55-invert-l), 1);
   --bulma-text-60: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-60-l), 1);
   --bulma-text-60-invert-l: var(--bulma-text-05-l);
@@ -10411,24 +10405,24 @@
   --bulma-text-70-invert-l: var(--bulma-text-10-l);
   --bulma-text-70-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-70-invert-l), 1);
   --bulma-text-75: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-75-l), 1);
-  --bulma-text-75-invert-l: var(--bulma-text-10-l);
+  --bulma-text-75-invert-l: var(--bulma-text-15-l);
   --bulma-text-75-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-75-invert-l), 1);
   --bulma-text-80: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-80-l), 1);
   --bulma-text-80-invert-l: var(--bulma-text-15-l);
   --bulma-text-80-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-80-invert-l), 1);
   --bulma-text-85: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-85-l), 1);
-  --bulma-text-85-invert-l: var(--bulma-text-15-l);
+  --bulma-text-85-invert-l: var(--bulma-text-20-l);
   --bulma-text-85-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-85-invert-l), 1);
   --bulma-text-90: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-90-l), 1);
   --bulma-text-90-invert-l: var(--bulma-text-20-l);
   --bulma-text-90-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-90-invert-l), 1);
   --bulma-text-95: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-95-l), 1);
-  --bulma-text-95-invert-l: var(--bulma-text-20-l);
+  --bulma-text-95-invert-l: var(--bulma-text-25-l);
   --bulma-text-95-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-95-invert-l), 1);
   --bulma-text-100: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-100-l), 1);
   --bulma-text-100-invert-l: var(--bulma-text-25-l);
   --bulma-text-100-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-100-invert-l), 1);
-  --bulma-text-invert-l: var(--bulma-text-15-l);
+  --bulma-text-invert-l: var(--bulma-text-100-l);
   --bulma-text-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-invert-l), 1);
   --bulma-text-light-l: var(--bulma-text-90-l);
   --bulma-text-light: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-light-l), 1);
@@ -10442,7 +10436,7 @@
   --bulma-text-bold: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-bold-l), 1);
   --bulma-text-soft-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-soft-invert-l), 1);
   --bulma-text-bold-invert: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-bold-invert-l), 1);
-  --bulma-text-on-scheme-l: 31.9607843137%;
+  --bulma-text-on-scheme-l: 29%;
   --bulma-text-on-scheme: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-on-scheme-l), 1);
   --bulma-primary: hsla(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l), 1);
   --bulma-primary-base: hsla(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l), 1);
@@ -11083,9 +11077,9 @@
   --bulma-black-bis: hsl(221, 14%, 9%);
   --bulma-black-ter: hsl(221, 14%, 14%);
   --bulma-grey-darker: hsl(221, 14%, 21%);
-  --bulma-grey-dark: #D1D1D1;
+  --bulma-grey-dark: hsl(221, 14%, 29%);
   --bulma-grey: hsl(221, 14%, 48%);
-  --bulma-grey-light: #E8E8E8;
+  --bulma-grey-light: hsl(221, 14%, 71%);
   --bulma-grey-lighter: hsl(221, 14%, 86%);
   --bulma-white-ter: hsl(221, 14%, 96%);
   --bulma-white-bis: hsl(221, 14%, 98%);
@@ -11144,7 +11138,7 @@
   --bulma-light-on-scheme: hsla(var(--bulma-light-h), var(--bulma-light-s), var(--bulma-light-on-scheme-l), 1);
   --bulma-dark-on-scheme-l: 56%;
   --bulma-dark-on-scheme: hsla(var(--bulma-dark-h), var(--bulma-dark-s), var(--bulma-dark-on-scheme-l), 1);
-  --bulma-text-on-scheme-l: 81.9607843137%;
+  --bulma-text-on-scheme-l: 54%;
   --bulma-text-on-scheme: hsla(var(--bulma-text-h), var(--bulma-text-s), var(--bulma-text-on-scheme-l), 1);
   --bulma-primary-on-scheme-l: 60%;
   --bulma-primary-on-scheme: hsla(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-on-scheme-l), 1);
@@ -11797,19 +11791,19 @@ a.box:active {
 .button strong, .veredas-button strong {
   color: inherit;
 }
-.button .icon, .veredas-button .icon, .button .veredas-header-settings-icon, .veredas-button .veredas-header-settings-icon, .button .icon.is-small, .button .icon.is-medium, .button .icon.is-large {
+.button .icon, .veredas-button .icon, .button .icon.is-small, .button .icon.is-medium, .button .icon.is-large {
   height: 1.5em;
   width: 1.5em;
 }
-.button .icon:first-child:not(:last-child), .veredas-button .icon:first-child:not(:last-child), .button .veredas-header-settings-icon:first-child:not(:last-child), .veredas-button .veredas-header-settings-icon:first-child:not(:last-child) {
+.button .icon:first-child:not(:last-child), .veredas-button .icon:first-child:not(:last-child) {
   margin-inline-start: calc(-0.5 * var(--bulma-button-padding-horizontal));
   margin-inline-end: calc(var(--bulma-button-padding-horizontal) * 0.25);
 }
-.button .icon:last-child:not(:first-child), .veredas-button .icon:last-child:not(:first-child), .button .veredas-header-settings-icon:last-child:not(:first-child), .veredas-button .veredas-header-settings-icon:last-child:not(:first-child) {
+.button .icon:last-child:not(:first-child), .veredas-button .icon:last-child:not(:first-child) {
   margin-inline-start: calc(var(--bulma-button-padding-horizontal) * 0.25);
   margin-inline-end: calc(-0.5 * var(--bulma-button-padding-horizontal));
 }
-.button .icon:first-child:last-child, .veredas-button .icon:first-child:last-child, .button .veredas-header-settings-icon:first-child:last-child, .veredas-button .veredas-header-settings-icon:first-child:last-child {
+.button .icon:first-child:last-child, .veredas-button .icon:first-child:last-child {
   margin-inline-start: calc(-0.5 * var(--bulma-button-padding-horizontal));
   margin-inline-end: calc(-0.5 * var(--bulma-button-padding-horizontal));
 }
@@ -12598,7 +12592,7 @@ a.box:active {
   --bulma-delete-dimensions: 2rem;
 }
 
-.icon, .veredas-header-settings-icon,
+.icon,
 .icon-text {
   --bulma-icon-dimensions: 1.5rem;
   --bulma-icon-dimensions-small: 1rem;
@@ -12607,7 +12601,7 @@ a.box:active {
   --bulma-icon-text-spacing: 0.25em;
 }
 
-.icon, .veredas-header-settings-icon {
+.icon {
   align-items: center;
   display: inline-flex;
   flex-shrink: 0;
@@ -12617,15 +12611,15 @@ a.box:active {
   transition-property: color;
   width: var(--bulma-icon-dimensions);
 }
-.icon.is-small, .is-small.veredas-header-settings-icon, .icon.veredas-is-small, .veredas-header-settings-icon.veredas-is-small {
+.icon.is-small, .icon.veredas-is-small {
   height: var(--bulma-icon-dimensions-small);
   width: var(--bulma-icon-dimensions-small);
 }
-.icon.is-medium, .is-medium.veredas-header-settings-icon, .icon.veredas-is-medium, .veredas-header-settings-icon.veredas-is-medium {
+.icon.is-medium, .icon.veredas-is-medium {
   height: var(--bulma-icon-dimensions-medium);
   width: var(--bulma-icon-dimensions-medium);
 }
-.icon.is-large, .is-large.veredas-header-settings-icon, .icon.veredas-is-large, .veredas-header-settings-icon.veredas-is-large {
+.icon.is-large, .icon.veredas-is-large {
   height: var(--bulma-icon-dimensions-large);
   width: var(--bulma-icon-dimensions-large);
 }
@@ -12639,7 +12633,7 @@ a.box:active {
   line-height: var(--bulma-icon-dimensions);
   vertical-align: top;
 }
-.icon-text .icon, .icon-text .veredas-header-settings-icon {
+.icon-text .icon {
   flex-grow: 0;
   flex-shrink: 0;
 }
@@ -13677,15 +13671,15 @@ div.icon-text {
 .tag.is-large, .tag.veredas-is-large {
   font-size: var(--bulma-size-medium);
 }
-.tag .icon:first-child:not(:last-child), .tag .veredas-header-settings-icon:first-child:not(:last-child) {
+.tag .icon:first-child:not(:last-child) {
   margin-inline-start: -0.375em;
   margin-inline-end: 0.1875em;
 }
-.tag .icon:last-child:not(:first-child), .tag .veredas-header-settings-icon:last-child:not(:first-child) {
+.tag .icon:last-child:not(:first-child) {
   margin-inline-start: 0.1875em;
   margin-inline-end: -0.375em;
 }
-.tag .icon:first-child:last-child, .tag .veredas-header-settings-icon:first-child:last-child {
+.tag .icon:first-child:last-child {
   margin-inline-start: -0.375em;
   margin-inline-end: -0.375em;
 }
@@ -14869,45 +14863,29 @@ button.tag:active,
   position: relative;
   text-align: inherit;
 }
-.control.has-icons-left .input:hover ~ .icon, .has-icons-left.veredas-control .input:hover ~ .icon, .control.veredas-has-icons-left .input:hover ~ .icon, .veredas-control.veredas-has-icons-left .input:hover ~ .icon, .control.has-icons-left .veredas-text-input:hover ~ .icon, .has-icons-left.veredas-control .veredas-text-input:hover ~ .icon, .control.veredas-has-icons-left .veredas-text-input:hover ~ .icon, .veredas-control.veredas-has-icons-left .veredas-text-input:hover ~ .icon, .control.has-icons-left .input:hover ~ .veredas-header-settings-icon, .has-icons-left.veredas-control .input:hover ~ .veredas-header-settings-icon, .control.veredas-has-icons-left .input:hover ~ .veredas-header-settings-icon, .veredas-control.veredas-has-icons-left .input:hover ~ .veredas-header-settings-icon, .control.has-icons-left .veredas-text-input:hover ~ .veredas-header-settings-icon, .has-icons-left.veredas-control .veredas-text-input:hover ~ .veredas-header-settings-icon, .control.veredas-has-icons-left .veredas-text-input:hover ~ .veredas-header-settings-icon, .veredas-control.veredas-has-icons-left .veredas-text-input:hover ~ .veredas-header-settings-icon,
+.control.has-icons-left .input:hover ~ .icon, .has-icons-left.veredas-control .input:hover ~ .icon, .control.veredas-has-icons-left .input:hover ~ .icon, .veredas-control.veredas-has-icons-left .input:hover ~ .icon, .control.has-icons-left .veredas-text-input:hover ~ .icon, .has-icons-left.veredas-control .veredas-text-input:hover ~ .icon, .control.veredas-has-icons-left .veredas-text-input:hover ~ .icon, .veredas-control.veredas-has-icons-left .veredas-text-input:hover ~ .icon,
 .control.has-icons-left .select:hover ~ .icon,
 .has-icons-left.veredas-control .select:hover ~ .icon,
 .control.veredas-has-icons-left .select:hover ~ .icon,
-.veredas-control.veredas-has-icons-left .select:hover ~ .icon,
-.control.has-icons-left .select:hover ~ .veredas-header-settings-icon,
-.has-icons-left.veredas-control .select:hover ~ .veredas-header-settings-icon,
-.control.veredas-has-icons-left .select:hover ~ .veredas-header-settings-icon,
-.veredas-control.veredas-has-icons-left .select:hover ~ .veredas-header-settings-icon, .control.has-icons-right .input:hover ~ .icon, .has-icons-right.veredas-control .input:hover ~ .icon, .control.veredas-has-icons-right .input:hover ~ .icon, .veredas-control.veredas-has-icons-right .input:hover ~ .icon, .control.has-icons-right .veredas-text-input:hover ~ .icon, .has-icons-right.veredas-control .veredas-text-input:hover ~ .icon, .control.veredas-has-icons-right .veredas-text-input:hover ~ .icon, .veredas-control.veredas-has-icons-right .veredas-text-input:hover ~ .icon, .control.has-icons-right .input:hover ~ .veredas-header-settings-icon, .has-icons-right.veredas-control .input:hover ~ .veredas-header-settings-icon, .control.veredas-has-icons-right .input:hover ~ .veredas-header-settings-icon, .veredas-control.veredas-has-icons-right .input:hover ~ .veredas-header-settings-icon, .control.has-icons-right .veredas-text-input:hover ~ .veredas-header-settings-icon, .has-icons-right.veredas-control .veredas-text-input:hover ~ .veredas-header-settings-icon, .control.veredas-has-icons-right .veredas-text-input:hover ~ .veredas-header-settings-icon, .veredas-control.veredas-has-icons-right .veredas-text-input:hover ~ .veredas-header-settings-icon,
+.veredas-control.veredas-has-icons-left .select:hover ~ .icon, .control.has-icons-right .input:hover ~ .icon, .has-icons-right.veredas-control .input:hover ~ .icon, .control.veredas-has-icons-right .input:hover ~ .icon, .veredas-control.veredas-has-icons-right .input:hover ~ .icon, .control.has-icons-right .veredas-text-input:hover ~ .icon, .has-icons-right.veredas-control .veredas-text-input:hover ~ .icon, .control.veredas-has-icons-right .veredas-text-input:hover ~ .icon, .veredas-control.veredas-has-icons-right .veredas-text-input:hover ~ .icon,
 .control.has-icons-right .select:hover ~ .icon,
 .has-icons-right.veredas-control .select:hover ~ .icon,
 .control.veredas-has-icons-right .select:hover ~ .icon,
-.veredas-control.veredas-has-icons-right .select:hover ~ .icon,
-.control.has-icons-right .select:hover ~ .veredas-header-settings-icon,
-.has-icons-right.veredas-control .select:hover ~ .veredas-header-settings-icon,
-.control.veredas-has-icons-right .select:hover ~ .veredas-header-settings-icon,
-.veredas-control.veredas-has-icons-right .select:hover ~ .veredas-header-settings-icon {
+.veredas-control.veredas-has-icons-right .select:hover ~ .icon {
   color: var(--bulma-input-icon-hover-color);
 }
-.control.has-icons-left .input:focus ~ .icon, .has-icons-left.veredas-control .input:focus ~ .icon, .control.veredas-has-icons-left .input:focus ~ .icon, .veredas-control.veredas-has-icons-left .input:focus ~ .icon, .control.has-icons-left .veredas-text-input:focus ~ .icon, .has-icons-left.veredas-control .veredas-text-input:focus ~ .icon, .control.veredas-has-icons-left .veredas-text-input:focus ~ .icon, .veredas-control.veredas-has-icons-left .veredas-text-input:focus ~ .icon, .control.has-icons-left .input:focus ~ .veredas-header-settings-icon, .has-icons-left.veredas-control .input:focus ~ .veredas-header-settings-icon, .control.veredas-has-icons-left .input:focus ~ .veredas-header-settings-icon, .veredas-control.veredas-has-icons-left .input:focus ~ .veredas-header-settings-icon, .control.has-icons-left .veredas-text-input:focus ~ .veredas-header-settings-icon, .has-icons-left.veredas-control .veredas-text-input:focus ~ .veredas-header-settings-icon, .control.veredas-has-icons-left .veredas-text-input:focus ~ .veredas-header-settings-icon, .veredas-control.veredas-has-icons-left .veredas-text-input:focus ~ .veredas-header-settings-icon,
+.control.has-icons-left .input:focus ~ .icon, .has-icons-left.veredas-control .input:focus ~ .icon, .control.veredas-has-icons-left .input:focus ~ .icon, .veredas-control.veredas-has-icons-left .input:focus ~ .icon, .control.has-icons-left .veredas-text-input:focus ~ .icon, .has-icons-left.veredas-control .veredas-text-input:focus ~ .icon, .control.veredas-has-icons-left .veredas-text-input:focus ~ .icon, .veredas-control.veredas-has-icons-left .veredas-text-input:focus ~ .icon,
 .control.has-icons-left .select:focus ~ .icon,
 .has-icons-left.veredas-control .select:focus ~ .icon,
 .control.veredas-has-icons-left .select:focus ~ .icon,
-.veredas-control.veredas-has-icons-left .select:focus ~ .icon,
-.control.has-icons-left .select:focus ~ .veredas-header-settings-icon,
-.has-icons-left.veredas-control .select:focus ~ .veredas-header-settings-icon,
-.control.veredas-has-icons-left .select:focus ~ .veredas-header-settings-icon,
-.veredas-control.veredas-has-icons-left .select:focus ~ .veredas-header-settings-icon, .control.has-icons-right .input:focus ~ .icon, .has-icons-right.veredas-control .input:focus ~ .icon, .control.veredas-has-icons-right .input:focus ~ .icon, .veredas-control.veredas-has-icons-right .input:focus ~ .icon, .control.has-icons-right .veredas-text-input:focus ~ .icon, .has-icons-right.veredas-control .veredas-text-input:focus ~ .icon, .control.veredas-has-icons-right .veredas-text-input:focus ~ .icon, .veredas-control.veredas-has-icons-right .veredas-text-input:focus ~ .icon, .control.has-icons-right .input:focus ~ .veredas-header-settings-icon, .has-icons-right.veredas-control .input:focus ~ .veredas-header-settings-icon, .control.veredas-has-icons-right .input:focus ~ .veredas-header-settings-icon, .veredas-control.veredas-has-icons-right .input:focus ~ .veredas-header-settings-icon, .control.has-icons-right .veredas-text-input:focus ~ .veredas-header-settings-icon, .has-icons-right.veredas-control .veredas-text-input:focus ~ .veredas-header-settings-icon, .control.veredas-has-icons-right .veredas-text-input:focus ~ .veredas-header-settings-icon, .veredas-control.veredas-has-icons-right .veredas-text-input:focus ~ .veredas-header-settings-icon,
+.veredas-control.veredas-has-icons-left .select:focus ~ .icon, .control.has-icons-right .input:focus ~ .icon, .has-icons-right.veredas-control .input:focus ~ .icon, .control.veredas-has-icons-right .input:focus ~ .icon, .veredas-control.veredas-has-icons-right .input:focus ~ .icon, .control.has-icons-right .veredas-text-input:focus ~ .icon, .has-icons-right.veredas-control .veredas-text-input:focus ~ .icon, .control.veredas-has-icons-right .veredas-text-input:focus ~ .icon, .veredas-control.veredas-has-icons-right .veredas-text-input:focus ~ .icon,
 .control.has-icons-right .select:focus ~ .icon,
 .has-icons-right.veredas-control .select:focus ~ .icon,
 .control.veredas-has-icons-right .select:focus ~ .icon,
-.veredas-control.veredas-has-icons-right .select:focus ~ .icon,
-.control.has-icons-right .select:focus ~ .veredas-header-settings-icon,
-.has-icons-right.veredas-control .select:focus ~ .veredas-header-settings-icon,
-.control.veredas-has-icons-right .select:focus ~ .veredas-header-settings-icon,
-.veredas-control.veredas-has-icons-right .select:focus ~ .veredas-header-settings-icon {
+.veredas-control.veredas-has-icons-right .select:focus ~ .icon {
   color: var(--bulma-input-icon-focus-color);
 }
-.control.has-icons-left .input.is-small ~ .icon, .has-icons-left.veredas-control .input.is-small ~ .icon, .control.veredas-has-icons-left .input.is-small ~ .icon, .veredas-control.veredas-has-icons-left .input.is-small ~ .icon, .control.has-icons-left .is-small.veredas-text-input ~ .icon, .has-icons-left.veredas-control .is-small.veredas-text-input ~ .icon, .control.veredas-has-icons-left .is-small.veredas-text-input ~ .icon, .veredas-control.veredas-has-icons-left .is-small.veredas-text-input ~ .icon, .control.has-icons-left .input.veredas-is-small ~ .icon, .has-icons-left.veredas-control .input.veredas-is-small ~ .icon, .control.veredas-has-icons-left .input.veredas-is-small ~ .icon, .veredas-control.veredas-has-icons-left .input.veredas-is-small ~ .icon, .control.has-icons-left .veredas-text-input.veredas-is-small ~ .icon, .has-icons-left.veredas-control .veredas-text-input.veredas-is-small ~ .icon, .control.veredas-has-icons-left .veredas-text-input.veredas-is-small ~ .icon, .veredas-control.veredas-has-icons-left .veredas-text-input.veredas-is-small ~ .icon, .control.has-icons-left .input.is-small ~ .veredas-header-settings-icon, .has-icons-left.veredas-control .input.is-small ~ .veredas-header-settings-icon, .control.veredas-has-icons-left .input.is-small ~ .veredas-header-settings-icon, .veredas-control.veredas-has-icons-left .input.is-small ~ .veredas-header-settings-icon, .control.has-icons-left .is-small.veredas-text-input ~ .veredas-header-settings-icon, .has-icons-left.veredas-control .is-small.veredas-text-input ~ .veredas-header-settings-icon, .control.veredas-has-icons-left .is-small.veredas-text-input ~ .veredas-header-settings-icon, .veredas-control.veredas-has-icons-left .is-small.veredas-text-input ~ .veredas-header-settings-icon, .control.has-icons-left .input.veredas-is-small ~ .veredas-header-settings-icon, .has-icons-left.veredas-control .input.veredas-is-small ~ .veredas-header-settings-icon, .control.veredas-has-icons-left .input.veredas-is-small ~ .veredas-header-settings-icon, .veredas-control.veredas-has-icons-left .input.veredas-is-small ~ .veredas-header-settings-icon, .control.has-icons-left .veredas-text-input.veredas-is-small ~ .veredas-header-settings-icon, .has-icons-left.veredas-control .veredas-text-input.veredas-is-small ~ .veredas-header-settings-icon, .control.veredas-has-icons-left .veredas-text-input.veredas-is-small ~ .veredas-header-settings-icon, .veredas-control.veredas-has-icons-left .veredas-text-input.veredas-is-small ~ .veredas-header-settings-icon,
+.control.has-icons-left .input.is-small ~ .icon, .has-icons-left.veredas-control .input.is-small ~ .icon, .control.veredas-has-icons-left .input.is-small ~ .icon, .veredas-control.veredas-has-icons-left .input.is-small ~ .icon, .control.has-icons-left .is-small.veredas-text-input ~ .icon, .has-icons-left.veredas-control .is-small.veredas-text-input ~ .icon, .control.veredas-has-icons-left .is-small.veredas-text-input ~ .icon, .veredas-control.veredas-has-icons-left .is-small.veredas-text-input ~ .icon, .control.has-icons-left .input.veredas-is-small ~ .icon, .has-icons-left.veredas-control .input.veredas-is-small ~ .icon, .control.veredas-has-icons-left .input.veredas-is-small ~ .icon, .veredas-control.veredas-has-icons-left .input.veredas-is-small ~ .icon, .control.has-icons-left .veredas-text-input.veredas-is-small ~ .icon, .has-icons-left.veredas-control .veredas-text-input.veredas-is-small ~ .icon, .control.veredas-has-icons-left .veredas-text-input.veredas-is-small ~ .icon, .veredas-control.veredas-has-icons-left .veredas-text-input.veredas-is-small ~ .icon,
 .control.has-icons-left .select.is-small ~ .icon,
 .has-icons-left.veredas-control .select.is-small ~ .icon,
 .control.veredas-has-icons-left .select.is-small ~ .icon,
@@ -14915,15 +14893,7 @@ button.tag:active,
 .control.has-icons-left .select.veredas-is-small ~ .icon,
 .has-icons-left.veredas-control .select.veredas-is-small ~ .icon,
 .control.veredas-has-icons-left .select.veredas-is-small ~ .icon,
-.veredas-control.veredas-has-icons-left .select.veredas-is-small ~ .icon,
-.control.has-icons-left .select.is-small ~ .veredas-header-settings-icon,
-.has-icons-left.veredas-control .select.is-small ~ .veredas-header-settings-icon,
-.control.veredas-has-icons-left .select.is-small ~ .veredas-header-settings-icon,
-.veredas-control.veredas-has-icons-left .select.is-small ~ .veredas-header-settings-icon,
-.control.has-icons-left .select.veredas-is-small ~ .veredas-header-settings-icon,
-.has-icons-left.veredas-control .select.veredas-is-small ~ .veredas-header-settings-icon,
-.control.veredas-has-icons-left .select.veredas-is-small ~ .veredas-header-settings-icon,
-.veredas-control.veredas-has-icons-left .select.veredas-is-small ~ .veredas-header-settings-icon, .control.has-icons-right .input.is-small ~ .icon, .has-icons-right.veredas-control .input.is-small ~ .icon, .control.veredas-has-icons-right .input.is-small ~ .icon, .veredas-control.veredas-has-icons-right .input.is-small ~ .icon, .control.has-icons-right .is-small.veredas-text-input ~ .icon, .has-icons-right.veredas-control .is-small.veredas-text-input ~ .icon, .control.veredas-has-icons-right .is-small.veredas-text-input ~ .icon, .veredas-control.veredas-has-icons-right .is-small.veredas-text-input ~ .icon, .control.has-icons-right .input.veredas-is-small ~ .icon, .has-icons-right.veredas-control .input.veredas-is-small ~ .icon, .control.veredas-has-icons-right .input.veredas-is-small ~ .icon, .veredas-control.veredas-has-icons-right .input.veredas-is-small ~ .icon, .control.has-icons-right .veredas-text-input.veredas-is-small ~ .icon, .has-icons-right.veredas-control .veredas-text-input.veredas-is-small ~ .icon, .control.veredas-has-icons-right .veredas-text-input.veredas-is-small ~ .icon, .veredas-control.veredas-has-icons-right .veredas-text-input.veredas-is-small ~ .icon, .control.has-icons-right .input.is-small ~ .veredas-header-settings-icon, .has-icons-right.veredas-control .input.is-small ~ .veredas-header-settings-icon, .control.veredas-has-icons-right .input.is-small ~ .veredas-header-settings-icon, .veredas-control.veredas-has-icons-right .input.is-small ~ .veredas-header-settings-icon, .control.has-icons-right .is-small.veredas-text-input ~ .veredas-header-settings-icon, .has-icons-right.veredas-control .is-small.veredas-text-input ~ .veredas-header-settings-icon, .control.veredas-has-icons-right .is-small.veredas-text-input ~ .veredas-header-settings-icon, .veredas-control.veredas-has-icons-right .is-small.veredas-text-input ~ .veredas-header-settings-icon, .control.has-icons-right .input.veredas-is-small ~ .veredas-header-settings-icon, .has-icons-right.veredas-control .input.veredas-is-small ~ .veredas-header-settings-icon, .control.veredas-has-icons-right .input.veredas-is-small ~ .veredas-header-settings-icon, .veredas-control.veredas-has-icons-right .input.veredas-is-small ~ .veredas-header-settings-icon, .control.has-icons-right .veredas-text-input.veredas-is-small ~ .veredas-header-settings-icon, .has-icons-right.veredas-control .veredas-text-input.veredas-is-small ~ .veredas-header-settings-icon, .control.veredas-has-icons-right .veredas-text-input.veredas-is-small ~ .veredas-header-settings-icon, .veredas-control.veredas-has-icons-right .veredas-text-input.veredas-is-small ~ .veredas-header-settings-icon,
+.veredas-control.veredas-has-icons-left .select.veredas-is-small ~ .icon, .control.has-icons-right .input.is-small ~ .icon, .has-icons-right.veredas-control .input.is-small ~ .icon, .control.veredas-has-icons-right .input.is-small ~ .icon, .veredas-control.veredas-has-icons-right .input.is-small ~ .icon, .control.has-icons-right .is-small.veredas-text-input ~ .icon, .has-icons-right.veredas-control .is-small.veredas-text-input ~ .icon, .control.veredas-has-icons-right .is-small.veredas-text-input ~ .icon, .veredas-control.veredas-has-icons-right .is-small.veredas-text-input ~ .icon, .control.has-icons-right .input.veredas-is-small ~ .icon, .has-icons-right.veredas-control .input.veredas-is-small ~ .icon, .control.veredas-has-icons-right .input.veredas-is-small ~ .icon, .veredas-control.veredas-has-icons-right .input.veredas-is-small ~ .icon, .control.has-icons-right .veredas-text-input.veredas-is-small ~ .icon, .has-icons-right.veredas-control .veredas-text-input.veredas-is-small ~ .icon, .control.veredas-has-icons-right .veredas-text-input.veredas-is-small ~ .icon, .veredas-control.veredas-has-icons-right .veredas-text-input.veredas-is-small ~ .icon,
 .control.has-icons-right .select.is-small ~ .icon,
 .has-icons-right.veredas-control .select.is-small ~ .icon,
 .control.veredas-has-icons-right .select.is-small ~ .icon,
@@ -14931,18 +14901,10 @@ button.tag:active,
 .control.has-icons-right .select.veredas-is-small ~ .icon,
 .has-icons-right.veredas-control .select.veredas-is-small ~ .icon,
 .control.veredas-has-icons-right .select.veredas-is-small ~ .icon,
-.veredas-control.veredas-has-icons-right .select.veredas-is-small ~ .icon,
-.control.has-icons-right .select.is-small ~ .veredas-header-settings-icon,
-.has-icons-right.veredas-control .select.is-small ~ .veredas-header-settings-icon,
-.control.veredas-has-icons-right .select.is-small ~ .veredas-header-settings-icon,
-.veredas-control.veredas-has-icons-right .select.is-small ~ .veredas-header-settings-icon,
-.control.has-icons-right .select.veredas-is-small ~ .veredas-header-settings-icon,
-.has-icons-right.veredas-control .select.veredas-is-small ~ .veredas-header-settings-icon,
-.control.veredas-has-icons-right .select.veredas-is-small ~ .veredas-header-settings-icon,
-.veredas-control.veredas-has-icons-right .select.veredas-is-small ~ .veredas-header-settings-icon {
+.veredas-control.veredas-has-icons-right .select.veredas-is-small ~ .icon {
   font-size: var(--bulma-size-small);
 }
-.control.has-icons-left .input.is-medium ~ .icon, .has-icons-left.veredas-control .input.is-medium ~ .icon, .control.veredas-has-icons-left .input.is-medium ~ .icon, .veredas-control.veredas-has-icons-left .input.is-medium ~ .icon, .control.has-icons-left .is-medium.veredas-text-input ~ .icon, .has-icons-left.veredas-control .is-medium.veredas-text-input ~ .icon, .control.veredas-has-icons-left .is-medium.veredas-text-input ~ .icon, .veredas-control.veredas-has-icons-left .is-medium.veredas-text-input ~ .icon, .control.has-icons-left .input.veredas-is-medium ~ .icon, .has-icons-left.veredas-control .input.veredas-is-medium ~ .icon, .control.veredas-has-icons-left .input.veredas-is-medium ~ .icon, .veredas-control.veredas-has-icons-left .input.veredas-is-medium ~ .icon, .control.has-icons-left .veredas-text-input.veredas-is-medium ~ .icon, .has-icons-left.veredas-control .veredas-text-input.veredas-is-medium ~ .icon, .control.veredas-has-icons-left .veredas-text-input.veredas-is-medium ~ .icon, .veredas-control.veredas-has-icons-left .veredas-text-input.veredas-is-medium ~ .icon, .control.has-icons-left .input.is-medium ~ .veredas-header-settings-icon, .has-icons-left.veredas-control .input.is-medium ~ .veredas-header-settings-icon, .control.veredas-has-icons-left .input.is-medium ~ .veredas-header-settings-icon, .veredas-control.veredas-has-icons-left .input.is-medium ~ .veredas-header-settings-icon, .control.has-icons-left .is-medium.veredas-text-input ~ .veredas-header-settings-icon, .has-icons-left.veredas-control .is-medium.veredas-text-input ~ .veredas-header-settings-icon, .control.veredas-has-icons-left .is-medium.veredas-text-input ~ .veredas-header-settings-icon, .veredas-control.veredas-has-icons-left .is-medium.veredas-text-input ~ .veredas-header-settings-icon, .control.has-icons-left .input.veredas-is-medium ~ .veredas-header-settings-icon, .has-icons-left.veredas-control .input.veredas-is-medium ~ .veredas-header-settings-icon, .control.veredas-has-icons-left .input.veredas-is-medium ~ .veredas-header-settings-icon, .veredas-control.veredas-has-icons-left .input.veredas-is-medium ~ .veredas-header-settings-icon, .control.has-icons-left .veredas-text-input.veredas-is-medium ~ .veredas-header-settings-icon, .has-icons-left.veredas-control .veredas-text-input.veredas-is-medium ~ .veredas-header-settings-icon, .control.veredas-has-icons-left .veredas-text-input.veredas-is-medium ~ .veredas-header-settings-icon, .veredas-control.veredas-has-icons-left .veredas-text-input.veredas-is-medium ~ .veredas-header-settings-icon,
+.control.has-icons-left .input.is-medium ~ .icon, .has-icons-left.veredas-control .input.is-medium ~ .icon, .control.veredas-has-icons-left .input.is-medium ~ .icon, .veredas-control.veredas-has-icons-left .input.is-medium ~ .icon, .control.has-icons-left .is-medium.veredas-text-input ~ .icon, .has-icons-left.veredas-control .is-medium.veredas-text-input ~ .icon, .control.veredas-has-icons-left .is-medium.veredas-text-input ~ .icon, .veredas-control.veredas-has-icons-left .is-medium.veredas-text-input ~ .icon, .control.has-icons-left .input.veredas-is-medium ~ .icon, .has-icons-left.veredas-control .input.veredas-is-medium ~ .icon, .control.veredas-has-icons-left .input.veredas-is-medium ~ .icon, .veredas-control.veredas-has-icons-left .input.veredas-is-medium ~ .icon, .control.has-icons-left .veredas-text-input.veredas-is-medium ~ .icon, .has-icons-left.veredas-control .veredas-text-input.veredas-is-medium ~ .icon, .control.veredas-has-icons-left .veredas-text-input.veredas-is-medium ~ .icon, .veredas-control.veredas-has-icons-left .veredas-text-input.veredas-is-medium ~ .icon,
 .control.has-icons-left .select.is-medium ~ .icon,
 .has-icons-left.veredas-control .select.is-medium ~ .icon,
 .control.veredas-has-icons-left .select.is-medium ~ .icon,
@@ -14950,15 +14912,7 @@ button.tag:active,
 .control.has-icons-left .select.veredas-is-medium ~ .icon,
 .has-icons-left.veredas-control .select.veredas-is-medium ~ .icon,
 .control.veredas-has-icons-left .select.veredas-is-medium ~ .icon,
-.veredas-control.veredas-has-icons-left .select.veredas-is-medium ~ .icon,
-.control.has-icons-left .select.is-medium ~ .veredas-header-settings-icon,
-.has-icons-left.veredas-control .select.is-medium ~ .veredas-header-settings-icon,
-.control.veredas-has-icons-left .select.is-medium ~ .veredas-header-settings-icon,
-.veredas-control.veredas-has-icons-left .select.is-medium ~ .veredas-header-settings-icon,
-.control.has-icons-left .select.veredas-is-medium ~ .veredas-header-settings-icon,
-.has-icons-left.veredas-control .select.veredas-is-medium ~ .veredas-header-settings-icon,
-.control.veredas-has-icons-left .select.veredas-is-medium ~ .veredas-header-settings-icon,
-.veredas-control.veredas-has-icons-left .select.veredas-is-medium ~ .veredas-header-settings-icon, .control.has-icons-right .input.is-medium ~ .icon, .has-icons-right.veredas-control .input.is-medium ~ .icon, .control.veredas-has-icons-right .input.is-medium ~ .icon, .veredas-control.veredas-has-icons-right .input.is-medium ~ .icon, .control.has-icons-right .is-medium.veredas-text-input ~ .icon, .has-icons-right.veredas-control .is-medium.veredas-text-input ~ .icon, .control.veredas-has-icons-right .is-medium.veredas-text-input ~ .icon, .veredas-control.veredas-has-icons-right .is-medium.veredas-text-input ~ .icon, .control.has-icons-right .input.veredas-is-medium ~ .icon, .has-icons-right.veredas-control .input.veredas-is-medium ~ .icon, .control.veredas-has-icons-right .input.veredas-is-medium ~ .icon, .veredas-control.veredas-has-icons-right .input.veredas-is-medium ~ .icon, .control.has-icons-right .veredas-text-input.veredas-is-medium ~ .icon, .has-icons-right.veredas-control .veredas-text-input.veredas-is-medium ~ .icon, .control.veredas-has-icons-right .veredas-text-input.veredas-is-medium ~ .icon, .veredas-control.veredas-has-icons-right .veredas-text-input.veredas-is-medium ~ .icon, .control.has-icons-right .input.is-medium ~ .veredas-header-settings-icon, .has-icons-right.veredas-control .input.is-medium ~ .veredas-header-settings-icon, .control.veredas-has-icons-right .input.is-medium ~ .veredas-header-settings-icon, .veredas-control.veredas-has-icons-right .input.is-medium ~ .veredas-header-settings-icon, .control.has-icons-right .is-medium.veredas-text-input ~ .veredas-header-settings-icon, .has-icons-right.veredas-control .is-medium.veredas-text-input ~ .veredas-header-settings-icon, .control.veredas-has-icons-right .is-medium.veredas-text-input ~ .veredas-header-settings-icon, .veredas-control.veredas-has-icons-right .is-medium.veredas-text-input ~ .veredas-header-settings-icon, .control.has-icons-right .input.veredas-is-medium ~ .veredas-header-settings-icon, .has-icons-right.veredas-control .input.veredas-is-medium ~ .veredas-header-settings-icon, .control.veredas-has-icons-right .input.veredas-is-medium ~ .veredas-header-settings-icon, .veredas-control.veredas-has-icons-right .input.veredas-is-medium ~ .veredas-header-settings-icon, .control.has-icons-right .veredas-text-input.veredas-is-medium ~ .veredas-header-settings-icon, .has-icons-right.veredas-control .veredas-text-input.veredas-is-medium ~ .veredas-header-settings-icon, .control.veredas-has-icons-right .veredas-text-input.veredas-is-medium ~ .veredas-header-settings-icon, .veredas-control.veredas-has-icons-right .veredas-text-input.veredas-is-medium ~ .veredas-header-settings-icon,
+.veredas-control.veredas-has-icons-left .select.veredas-is-medium ~ .icon, .control.has-icons-right .input.is-medium ~ .icon, .has-icons-right.veredas-control .input.is-medium ~ .icon, .control.veredas-has-icons-right .input.is-medium ~ .icon, .veredas-control.veredas-has-icons-right .input.is-medium ~ .icon, .control.has-icons-right .is-medium.veredas-text-input ~ .icon, .has-icons-right.veredas-control .is-medium.veredas-text-input ~ .icon, .control.veredas-has-icons-right .is-medium.veredas-text-input ~ .icon, .veredas-control.veredas-has-icons-right .is-medium.veredas-text-input ~ .icon, .control.has-icons-right .input.veredas-is-medium ~ .icon, .has-icons-right.veredas-control .input.veredas-is-medium ~ .icon, .control.veredas-has-icons-right .input.veredas-is-medium ~ .icon, .veredas-control.veredas-has-icons-right .input.veredas-is-medium ~ .icon, .control.has-icons-right .veredas-text-input.veredas-is-medium ~ .icon, .has-icons-right.veredas-control .veredas-text-input.veredas-is-medium ~ .icon, .control.veredas-has-icons-right .veredas-text-input.veredas-is-medium ~ .icon, .veredas-control.veredas-has-icons-right .veredas-text-input.veredas-is-medium ~ .icon,
 .control.has-icons-right .select.is-medium ~ .icon,
 .has-icons-right.veredas-control .select.is-medium ~ .icon,
 .control.veredas-has-icons-right .select.is-medium ~ .icon,
@@ -14966,18 +14920,10 @@ button.tag:active,
 .control.has-icons-right .select.veredas-is-medium ~ .icon,
 .has-icons-right.veredas-control .select.veredas-is-medium ~ .icon,
 .control.veredas-has-icons-right .select.veredas-is-medium ~ .icon,
-.veredas-control.veredas-has-icons-right .select.veredas-is-medium ~ .icon,
-.control.has-icons-right .select.is-medium ~ .veredas-header-settings-icon,
-.has-icons-right.veredas-control .select.is-medium ~ .veredas-header-settings-icon,
-.control.veredas-has-icons-right .select.is-medium ~ .veredas-header-settings-icon,
-.veredas-control.veredas-has-icons-right .select.is-medium ~ .veredas-header-settings-icon,
-.control.has-icons-right .select.veredas-is-medium ~ .veredas-header-settings-icon,
-.has-icons-right.veredas-control .select.veredas-is-medium ~ .veredas-header-settings-icon,
-.control.veredas-has-icons-right .select.veredas-is-medium ~ .veredas-header-settings-icon,
-.veredas-control.veredas-has-icons-right .select.veredas-is-medium ~ .veredas-header-settings-icon {
+.veredas-control.veredas-has-icons-right .select.veredas-is-medium ~ .icon {
   font-size: var(--bulma-size-medium);
 }
-.control.has-icons-left .input.is-large ~ .icon, .has-icons-left.veredas-control .input.is-large ~ .icon, .control.veredas-has-icons-left .input.is-large ~ .icon, .veredas-control.veredas-has-icons-left .input.is-large ~ .icon, .control.has-icons-left .is-large.veredas-text-input ~ .icon, .has-icons-left.veredas-control .is-large.veredas-text-input ~ .icon, .control.veredas-has-icons-left .is-large.veredas-text-input ~ .icon, .veredas-control.veredas-has-icons-left .is-large.veredas-text-input ~ .icon, .control.has-icons-left .input.veredas-is-large ~ .icon, .has-icons-left.veredas-control .input.veredas-is-large ~ .icon, .control.veredas-has-icons-left .input.veredas-is-large ~ .icon, .veredas-control.veredas-has-icons-left .input.veredas-is-large ~ .icon, .control.has-icons-left .veredas-text-input.veredas-is-large ~ .icon, .has-icons-left.veredas-control .veredas-text-input.veredas-is-large ~ .icon, .control.veredas-has-icons-left .veredas-text-input.veredas-is-large ~ .icon, .veredas-control.veredas-has-icons-left .veredas-text-input.veredas-is-large ~ .icon, .control.has-icons-left .input.is-large ~ .veredas-header-settings-icon, .has-icons-left.veredas-control .input.is-large ~ .veredas-header-settings-icon, .control.veredas-has-icons-left .input.is-large ~ .veredas-header-settings-icon, .veredas-control.veredas-has-icons-left .input.is-large ~ .veredas-header-settings-icon, .control.has-icons-left .is-large.veredas-text-input ~ .veredas-header-settings-icon, .has-icons-left.veredas-control .is-large.veredas-text-input ~ .veredas-header-settings-icon, .control.veredas-has-icons-left .is-large.veredas-text-input ~ .veredas-header-settings-icon, .veredas-control.veredas-has-icons-left .is-large.veredas-text-input ~ .veredas-header-settings-icon, .control.has-icons-left .input.veredas-is-large ~ .veredas-header-settings-icon, .has-icons-left.veredas-control .input.veredas-is-large ~ .veredas-header-settings-icon, .control.veredas-has-icons-left .input.veredas-is-large ~ .veredas-header-settings-icon, .veredas-control.veredas-has-icons-left .input.veredas-is-large ~ .veredas-header-settings-icon, .control.has-icons-left .veredas-text-input.veredas-is-large ~ .veredas-header-settings-icon, .has-icons-left.veredas-control .veredas-text-input.veredas-is-large ~ .veredas-header-settings-icon, .control.veredas-has-icons-left .veredas-text-input.veredas-is-large ~ .veredas-header-settings-icon, .veredas-control.veredas-has-icons-left .veredas-text-input.veredas-is-large ~ .veredas-header-settings-icon,
+.control.has-icons-left .input.is-large ~ .icon, .has-icons-left.veredas-control .input.is-large ~ .icon, .control.veredas-has-icons-left .input.is-large ~ .icon, .veredas-control.veredas-has-icons-left .input.is-large ~ .icon, .control.has-icons-left .is-large.veredas-text-input ~ .icon, .has-icons-left.veredas-control .is-large.veredas-text-input ~ .icon, .control.veredas-has-icons-left .is-large.veredas-text-input ~ .icon, .veredas-control.veredas-has-icons-left .is-large.veredas-text-input ~ .icon, .control.has-icons-left .input.veredas-is-large ~ .icon, .has-icons-left.veredas-control .input.veredas-is-large ~ .icon, .control.veredas-has-icons-left .input.veredas-is-large ~ .icon, .veredas-control.veredas-has-icons-left .input.veredas-is-large ~ .icon, .control.has-icons-left .veredas-text-input.veredas-is-large ~ .icon, .has-icons-left.veredas-control .veredas-text-input.veredas-is-large ~ .icon, .control.veredas-has-icons-left .veredas-text-input.veredas-is-large ~ .icon, .veredas-control.veredas-has-icons-left .veredas-text-input.veredas-is-large ~ .icon,
 .control.has-icons-left .select.is-large ~ .icon,
 .has-icons-left.veredas-control .select.is-large ~ .icon,
 .control.veredas-has-icons-left .select.is-large ~ .icon,
@@ -14985,15 +14931,7 @@ button.tag:active,
 .control.has-icons-left .select.veredas-is-large ~ .icon,
 .has-icons-left.veredas-control .select.veredas-is-large ~ .icon,
 .control.veredas-has-icons-left .select.veredas-is-large ~ .icon,
-.veredas-control.veredas-has-icons-left .select.veredas-is-large ~ .icon,
-.control.has-icons-left .select.is-large ~ .veredas-header-settings-icon,
-.has-icons-left.veredas-control .select.is-large ~ .veredas-header-settings-icon,
-.control.veredas-has-icons-left .select.is-large ~ .veredas-header-settings-icon,
-.veredas-control.veredas-has-icons-left .select.is-large ~ .veredas-header-settings-icon,
-.control.has-icons-left .select.veredas-is-large ~ .veredas-header-settings-icon,
-.has-icons-left.veredas-control .select.veredas-is-large ~ .veredas-header-settings-icon,
-.control.veredas-has-icons-left .select.veredas-is-large ~ .veredas-header-settings-icon,
-.veredas-control.veredas-has-icons-left .select.veredas-is-large ~ .veredas-header-settings-icon, .control.has-icons-right .input.is-large ~ .icon, .has-icons-right.veredas-control .input.is-large ~ .icon, .control.veredas-has-icons-right .input.is-large ~ .icon, .veredas-control.veredas-has-icons-right .input.is-large ~ .icon, .control.has-icons-right .is-large.veredas-text-input ~ .icon, .has-icons-right.veredas-control .is-large.veredas-text-input ~ .icon, .control.veredas-has-icons-right .is-large.veredas-text-input ~ .icon, .veredas-control.veredas-has-icons-right .is-large.veredas-text-input ~ .icon, .control.has-icons-right .input.veredas-is-large ~ .icon, .has-icons-right.veredas-control .input.veredas-is-large ~ .icon, .control.veredas-has-icons-right .input.veredas-is-large ~ .icon, .veredas-control.veredas-has-icons-right .input.veredas-is-large ~ .icon, .control.has-icons-right .veredas-text-input.veredas-is-large ~ .icon, .has-icons-right.veredas-control .veredas-text-input.veredas-is-large ~ .icon, .control.veredas-has-icons-right .veredas-text-input.veredas-is-large ~ .icon, .veredas-control.veredas-has-icons-right .veredas-text-input.veredas-is-large ~ .icon, .control.has-icons-right .input.is-large ~ .veredas-header-settings-icon, .has-icons-right.veredas-control .input.is-large ~ .veredas-header-settings-icon, .control.veredas-has-icons-right .input.is-large ~ .veredas-header-settings-icon, .veredas-control.veredas-has-icons-right .input.is-large ~ .veredas-header-settings-icon, .control.has-icons-right .is-large.veredas-text-input ~ .veredas-header-settings-icon, .has-icons-right.veredas-control .is-large.veredas-text-input ~ .veredas-header-settings-icon, .control.veredas-has-icons-right .is-large.veredas-text-input ~ .veredas-header-settings-icon, .veredas-control.veredas-has-icons-right .is-large.veredas-text-input ~ .veredas-header-settings-icon, .control.has-icons-right .input.veredas-is-large ~ .veredas-header-settings-icon, .has-icons-right.veredas-control .input.veredas-is-large ~ .veredas-header-settings-icon, .control.veredas-has-icons-right .input.veredas-is-large ~ .veredas-header-settings-icon, .veredas-control.veredas-has-icons-right .input.veredas-is-large ~ .veredas-header-settings-icon, .control.has-icons-right .veredas-text-input.veredas-is-large ~ .veredas-header-settings-icon, .has-icons-right.veredas-control .veredas-text-input.veredas-is-large ~ .veredas-header-settings-icon, .control.veredas-has-icons-right .veredas-text-input.veredas-is-large ~ .veredas-header-settings-icon, .veredas-control.veredas-has-icons-right .veredas-text-input.veredas-is-large ~ .veredas-header-settings-icon,
+.veredas-control.veredas-has-icons-left .select.veredas-is-large ~ .icon, .control.has-icons-right .input.is-large ~ .icon, .has-icons-right.veredas-control .input.is-large ~ .icon, .control.veredas-has-icons-right .input.is-large ~ .icon, .veredas-control.veredas-has-icons-right .input.is-large ~ .icon, .control.has-icons-right .is-large.veredas-text-input ~ .icon, .has-icons-right.veredas-control .is-large.veredas-text-input ~ .icon, .control.veredas-has-icons-right .is-large.veredas-text-input ~ .icon, .veredas-control.veredas-has-icons-right .is-large.veredas-text-input ~ .icon, .control.has-icons-right .input.veredas-is-large ~ .icon, .has-icons-right.veredas-control .input.veredas-is-large ~ .icon, .control.veredas-has-icons-right .input.veredas-is-large ~ .icon, .veredas-control.veredas-has-icons-right .input.veredas-is-large ~ .icon, .control.has-icons-right .veredas-text-input.veredas-is-large ~ .icon, .has-icons-right.veredas-control .veredas-text-input.veredas-is-large ~ .icon, .control.veredas-has-icons-right .veredas-text-input.veredas-is-large ~ .icon, .veredas-control.veredas-has-icons-right .veredas-text-input.veredas-is-large ~ .icon,
 .control.has-icons-right .select.is-large ~ .icon,
 .has-icons-right.veredas-control .select.is-large ~ .icon,
 .control.veredas-has-icons-right .select.is-large ~ .icon,
@@ -15001,18 +14939,10 @@ button.tag:active,
 .control.has-icons-right .select.veredas-is-large ~ .icon,
 .has-icons-right.veredas-control .select.veredas-is-large ~ .icon,
 .control.veredas-has-icons-right .select.veredas-is-large ~ .icon,
-.veredas-control.veredas-has-icons-right .select.veredas-is-large ~ .icon,
-.control.has-icons-right .select.is-large ~ .veredas-header-settings-icon,
-.has-icons-right.veredas-control .select.is-large ~ .veredas-header-settings-icon,
-.control.veredas-has-icons-right .select.is-large ~ .veredas-header-settings-icon,
-.veredas-control.veredas-has-icons-right .select.is-large ~ .veredas-header-settings-icon,
-.control.has-icons-right .select.veredas-is-large ~ .veredas-header-settings-icon,
-.has-icons-right.veredas-control .select.veredas-is-large ~ .veredas-header-settings-icon,
-.control.veredas-has-icons-right .select.veredas-is-large ~ .veredas-header-settings-icon,
-.veredas-control.veredas-has-icons-right .select.veredas-is-large ~ .veredas-header-settings-icon {
+.veredas-control.veredas-has-icons-right .select.veredas-is-large ~ .icon {
   font-size: var(--bulma-size-large);
 }
-.control.has-icons-left .icon, .has-icons-left.veredas-control .icon, .control.veredas-has-icons-left .icon, .veredas-control.veredas-has-icons-left .icon, .control.has-icons-left .veredas-header-settings-icon, .has-icons-left.veredas-control .veredas-header-settings-icon, .control.veredas-has-icons-left .veredas-header-settings-icon, .veredas-control.veredas-has-icons-left .veredas-header-settings-icon, .control.has-icons-right .icon, .has-icons-right.veredas-control .icon, .control.veredas-has-icons-right .icon, .veredas-control.veredas-has-icons-right .icon, .control.has-icons-right .veredas-header-settings-icon, .has-icons-right.veredas-control .veredas-header-settings-icon, .control.veredas-has-icons-right .veredas-header-settings-icon, .veredas-control.veredas-has-icons-right .veredas-header-settings-icon {
+.control.has-icons-left .icon, .has-icons-left.veredas-control .icon, .control.veredas-has-icons-left .icon, .veredas-control.veredas-has-icons-left .icon, .control.has-icons-right .icon, .has-icons-right.veredas-control .icon, .control.veredas-has-icons-right .icon, .veredas-control.veredas-has-icons-right .icon {
   color: var(--bulma-input-icon-color);
   height: var(--bulma-input-height);
   pointer-events: none;
@@ -15028,7 +14958,7 @@ button.tag:active,
 .veredas-control.veredas-has-icons-left .select select {
   padding-left: var(--bulma-input-height);
 }
-.control.has-icons-left .icon.is-left, .has-icons-left.veredas-control .icon.is-left, .control.veredas-has-icons-left .icon.is-left, .veredas-control.veredas-has-icons-left .icon.is-left, .control.has-icons-left .is-left.veredas-header-settings-icon, .has-icons-left.veredas-control .is-left.veredas-header-settings-icon, .control.veredas-has-icons-left .is-left.veredas-header-settings-icon, .veredas-control.veredas-has-icons-left .is-left.veredas-header-settings-icon {
+.control.has-icons-left .icon.is-left, .has-icons-left.veredas-control .icon.is-left, .control.veredas-has-icons-left .icon.is-left, .veredas-control.veredas-has-icons-left .icon.is-left {
   left: 0;
 }
 .control.has-icons-right .input, .has-icons-right.veredas-control .input, .control.veredas-has-icons-right .input, .veredas-control.veredas-has-icons-right .input, .control.has-icons-right .veredas-text-input, .has-icons-right.veredas-control .veredas-text-input, .control.veredas-has-icons-right .veredas-text-input, .veredas-control.veredas-has-icons-right .veredas-text-input,
@@ -15038,7 +14968,7 @@ button.tag:active,
 .veredas-control.veredas-has-icons-right .select select {
   padding-right: var(--bulma-input-height);
 }
-.control.has-icons-right .icon.is-right, .has-icons-right.veredas-control .icon.is-right, .control.veredas-has-icons-right .icon.is-right, .veredas-control.veredas-has-icons-right .icon.is-right, .control.has-icons-right .is-right.veredas-header-settings-icon, .has-icons-right.veredas-control .is-right.veredas-header-settings-icon, .control.veredas-has-icons-right .is-right.veredas-header-settings-icon, .veredas-control.veredas-has-icons-right .is-right.veredas-header-settings-icon {
+.control.has-icons-right .icon.is-right, .has-icons-right.veredas-control .icon.is-right, .control.veredas-has-icons-right .icon.is-right, .veredas-control.veredas-has-icons-right .icon.is-right {
   right: 0;
 }
 .control.is-loading::after, .is-loading.veredas-control::after {
@@ -15104,10 +15034,10 @@ button.tag:active,
   flex-wrap: wrap;
   justify-content: flex-start;
 }
-.breadcrumb .icon:first-child, .breadcrumb .veredas-header-settings-icon:first-child {
+.breadcrumb .icon:first-child {
   margin-inline-end: 0.5em;
 }
-.breadcrumb .icon:last-child, .breadcrumb .veredas-header-settings-icon:last-child {
+.breadcrumb .icon:last-child {
   margin-inline-start: 0.5em;
 }
 .breadcrumb.is-centered ol, .breadcrumb.veredas-filter-title ol,
@@ -16146,9 +16076,8 @@ body.has-navbar-fixed-bottom {
   padding: 0.5rem 0.75rem;
   position: relative;
 }
-.navbar-item .icon:only-child, .navbar-item .veredas-header-settings-icon:only-child,
-.navbar-link .icon:only-child,
-.navbar-link .veredas-header-settings-icon:only-child {
+.navbar-item .icon:only-child,
+.navbar-link .icon:only-child {
   margin-left: -0.25rem;
   margin-right: -0.25rem;
 }
@@ -16981,10 +16910,10 @@ label.panel-block:hover {
   justify-content: flex-end;
   padding-left: 0.75em;
 }
-.tabs .icon:first-child, .tabs .veredas-header-settings-icon:first-child {
+.tabs .icon:first-child {
   margin-inline-end: 0.5em;
 }
-.tabs .icon:last-child, .tabs .veredas-header-settings-icon:last-child {
+.tabs .icon:last-child {
   margin-inline-start: 0.5em;
 }
 .tabs.is-centered ul, .tabs.veredas-filter-title ul {
@@ -23119,7 +23048,7 @@ has-background-white.is-hoverable:active {
   --color-100: hsl(var(--h), var(--s), var(--100-l));
 }
 
-.has-text-black, .veredas-header-title, .veredas-header-settings-icon {
+.has-text-black, .veredas-header-title {
   color: hsl(var(--bulma-black-h), var(--bulma-black-s), var(--bulma-black-l)) !important;
 }
 
@@ -23543,21 +23472,18 @@ has-background-white.is-hoverable:active {
   background-color: hsl(var(--bulma-black-h), var(--bulma-black-s), var(--bulma-black-100-invert-l)) !important;
 }
 
-a.has-text-black:hover, a.veredas-header-title:hover, a.veredas-header-settings-icon:hover, a.has-text-black:focus-visible, a.veredas-header-title:focus-visible, a.veredas-header-settings-icon:focus-visible,
+a.has-text-black:hover, a.veredas-header-title:hover, a.has-text-black:focus-visible, a.veredas-header-title:focus-visible,
 button.has-text-black:hover,
 button.veredas-header-title:hover,
-button.veredas-header-settings-icon:hover,
 button.has-text-black:focus-visible,
 button.veredas-header-title:focus-visible,
-button.veredas-header-settings-icon:focus-visible,
 has-text-black.is-hoverable:hover,
 has-text-black.is-hoverable:focus-visible {
   color: hsl(var(--bulma-black-h), var(--bulma-black-s), calc(var(--bulma-black-l) + var(--bulma-hover-color-l-delta))) !important;
 }
-a.has-text-black:active, a.veredas-header-title:active, a.veredas-header-settings-icon:active,
+a.has-text-black:active, a.veredas-header-title:active,
 button.has-text-black:active,
 button.veredas-header-title:active,
-button.veredas-header-settings-icon:active,
 has-text-black.is-hoverable:active {
   color: hsl(var(--bulma-black-h), var(--bulma-black-s), calc(var(--bulma-black-l) + var(--bulma-active-color-l-delta))) !important;
 }
@@ -28140,11 +28066,11 @@ has-background-danger.is-hoverable:active {
 }
 
 .has-text-grey-dark {
-  color: #D1D1D1 !important;
+  color: hsl(221, 14%, 29%) !important;
 }
 
 .has-background-grey-dark {
-  background-color: #D1D1D1 !important;
+  background-color: hsl(221, 14%, 29%) !important;
 }
 
 .has-text-grey {
@@ -28156,11 +28082,11 @@ has-background-danger.is-hoverable:active {
 }
 
 .has-text-grey-light {
-  color: #E8E8E8 !important;
+  color: hsl(221, 14%, 71%) !important;
 }
 
 .has-background-grey-light {
-  background-color: #E8E8E8 !important;
+  background-color: hsl(221, 14%, 71%) !important;
 }
 
 .has-text-grey-lighter {
@@ -30161,43 +30087,12 @@ has-background-danger.is-hoverable:active {
   pointer-events: all !important;
 }
 
-.veredas-header {
-  height: 4.5rem;
-  width: 100vw;
-  padding: 1rem 1rem 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.veredas-app-container {
+  min-height: calc(100vh - 4.5rem - 6rem);
+  max-height: calc(100vh - 4.5rem - 6rem);
+  overflow: auto;
 }
-.veredas-header-spacer {
-  width: 1.5rem;
-  min-width: 1.5rem;
-  flex-grow: 1;
-}
-@media (prefers-color-scheme: dark) {
-  .veredas-header-title {
-    color: #fff !important;
-  }
-}
-.veredas-header-title {
-  font-size: 12pt;
-  margin-bottom: 0 !important;
-  flex-grow: 0;
-  text-align: center;
-  font-weight: bold;
-  flex-shrink: 0;
-}
-.veredas-header-settings-icon {
-  width: 1.5rem;
-  min-width: 1.5rem;
-  flex-grow: 1;
-  display: flex;
-  justify-content: flex-end;
-}
-.veredas-header-settings-icon-fa {
-  cursor: pointer;
-  margin-right: 1rem;
-}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -30246,6 +30141,43 @@ has-background-danger.is-hoverable:active {
     opacity: 0;
   }
 }
+.veredas-header {
+  height: 4.5rem;
+  width: 100vw;
+  padding: 1rem 1rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.veredas-header-spacer {
+  width: 1.5rem;
+  min-width: 1.5rem;
+  flex-grow: 1;
+}
+@media (prefers-color-scheme: dark) {
+  .veredas-header-title {
+    color: #fff !important;
+  }
+}
+.veredas-header-title {
+  font-size: 12pt;
+  margin-bottom: 0 !important;
+  flex-grow: 0;
+  text-align: center;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+.veredas-header-settings-icon {
+  width: 1.5rem;
+  min-width: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.veredas-header-settings-icon-fa {
+  margin-right: 1rem;
+}
+
 .veredas-filter-label {
   display: flex;
   justify-content: flex-start;
@@ -30306,22 +30238,25 @@ has-background-danger.is-hoverable:active {
   align-items: center;
 }
 .veredas-filter-icon-apply {
-  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 1rem;
 }
 .veredas-filter-icon-close {
-  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: 1rem;
 }
+
 .veredas-map .container {
   height: 100%;
   width: 100%;
+}
+
+.veredas-icon {
+  cursor: pointer;
 }
 .veredas-button-group {
   display: flex;
@@ -30330,11 +30265,44 @@ has-background-danger.is-hoverable:active {
   overflow: auto;
   flex-wrap: nowrap;
 }
+
+.veredas-dock-container {
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100vw;
+  max-width: 100vw;
+  border-top: 1px solid #D1D1D1;
+}
+.veredas-dock-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  background: none;
+  cursor: pointer;
+  width: 25vw;
+  height: 5.5rem;
+}
+.veredas-dock-button-active {
+  filter: brightness(0) saturate(100%) invert(75%) sepia(32%) saturate(516%) hue-rotate(92deg) brightness(98%) contrast(86%);
+}
+.veredas-dock-button-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.veredas-dock-button-label {
+  font-size: 0.75rem;
+}
+.veredas-dock-button-label-active {
+  color: #66CC8A;
+}
+
 .veredas-home-map {
   height: calc(100vh - 4.5rem - 6rem);
-}
-.veredas-home-search-icon {
-  cursor: pointer;
 }
 .veredas-home-text-search {
   width: calc(100% - 2rem);
@@ -30347,4 +30315,15 @@ has-background-danger.is-hoverable:active {
   margin-bottom: 0.5rem;
   padding-right: 1rem;
   padding-left: 1rem;
+}
+.veredas-home-controls-overlay {
+  position: absolute;
+  top: 4.5rem;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  pointer-events: none;
+}
+.veredas-home-controls-overlay > div {
+  pointer-events: auto;
 }
