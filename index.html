@@ -1,89 +1,38 @@
-<!doctype html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="author">
-    <meta content="Aplicação de Trilhas" name="description">
-    <meta name="theme-color" content="#66CC8A">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta property="og:url" content="https:///app-deploy">
-    <meta property="og:title">
-    <meta property="og:description" content="Aplicação de Trilhas">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://">
-    <title></title>
-    <link href="/app-deploy/web/icon.svg" rel="icon">
-    <link rel="apple-touch-icon" href="/app-deploy/web/icon.svg">
-    <link rel="manifest" href="/app-deploy/manifest.webmanifest">
-    <link href="/app-deploy/app.css" type="text/css" rel="stylesheet">
-    <link href="/app-deploy/web/animations.css" type="text/css" rel="stylesheet">
-    <link href="/app-deploy/web/leaflet.css" type="text/css" rel="stylesheet">
-    <link href="/app-deploy/web/veredas.css" type="text/css" rel="stylesheet">
-    <script defer src="/app-deploy/wasm_exec.js"></script>
-    <script defer src="/app-deploy/app.js"></script>
-    <script src="/app-deploy/web/leaflet.js"></script>
-  </head>
-  <body>
-    <div>
-      <header class="veredas-header">
-        <div class="veredas-header-spacer"></div>
-        <h1 class="veredas-header-title">Veredas</h1>
-        <span class="veredas-header-settings-icon">
-          <i class="veredas-icon veredas-icon-sliders veredas-header-settings-icon-fa"></i>
-        </span>
-      </header>
-      <div class="veredas-app-container">
-        <div>
-          <div id="home-map" class="veredas-map-container veredas-home-map"></div>
-          <div class="veredas-home-controls-overlay">
-            <div>
-              <div class="veredas-control veredas-home-text-search veredas-has-icons-left">
-                <input class="veredas-text-input veredas-text-input-is-small" placeholder="Pesquisar trilhas" disabled="false" type="text">
-                <span class="icon is-small is-left">
-                  <i class="veredas-icon veredas-icon-magnifying-glass"></i>
-                </span>
-              </div>
-              <div class="veredas-button-group veredas-home-filter-controls">
-                <button class="veredas-button veredas-is-black veredas-is-small">Dificuldade</button>
-                <button class="veredas-button veredas-is-black veredas-is-small">Atividade</button>
-                <button class="veredas-button veredas-is-black veredas-is-small">Duração</button>
-                <button class="veredas-button veredas-is-black veredas-is-small">Avaliação</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="veredas-dock-container">
-        <button class="veredas-dock-button veredas-dock-button-active">
-          <div class="veredas-dock-button-icon">
-            <i class="veredas-icon veredas-icon-magnifying-glass"></i>
-          </div>
-          <span class="veredas-dock-button-label veredas-dock-button-label-active">Buscar</span>
-        </button>
-        <button class="veredas-dock-button">
-          <div class="veredas-dock-button-icon">
-            <i class="veredas-icon veredas-icon-square-plus"></i>
-          </div>
-          <span class="veredas-dock-button-label">Gravar</span>
-        </button>
-        <button class="veredas-dock-button">
-          <div class="veredas-dock-button-icon">
-            <i class="veredas-icon veredas-icon-user"></i>
-          </div>
-          <span class="veredas-dock-button-label">Perfil</span>
-        </button>
-        <button class="veredas-dock-button">
-          <div class="veredas-dock-button-icon">
-            <i class="veredas-icon veredas-icon-bookmark"></i>
-          </div>
-          <span class="veredas-dock-button-label">Favoritos</span>
-        </button>
-      </div>
-    </div>
-    <aside id="app-wasm-loader" class="goapp-app-info">
-      <img class="goapp-logo goapp-spin" alt="wasm loader icon" src="/app-deploy/web/icon.svg" id="app-wasm-loader-icon">
-      <p id="app-wasm-loader-label" class="goapp-label">0%</p>
-    </aside>
-  </body>
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="app">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>app</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
 </html>

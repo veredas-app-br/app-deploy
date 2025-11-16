@@ -1,8 +1,0 @@
-// Path to Bulma's sass folder
-@use "../../../node_modules/bulma/sass" with (
-    $family-primary: '"Nunito", sans-serif',
-    $primary: #66CC8A,
-    $link: #333C4D,
-    $control-border-width: 2px,
-    $input-shadow: none
-);
